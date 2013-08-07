@@ -5,6 +5,12 @@ $(document).ready(function(){
 
 });
 
+
+
+
+
+
+
 $(window).scroll(function(){
 
   // Calculate the distance of an element from the top of the browser window
