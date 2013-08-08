@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Page Title -->
+    <title>My New Project</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/005.css">
+
+  </head>
+  <body>
+  
+    <div class="section">
+      <div class="content content-full">
+
+        <h1>Artsy Column Recreation</h1>
+        <p>I dig how Artsy works <a href="http://artsy.net/posts/featured">their fixed columns</a> and want to work on recreating this in order to refine my knowledge of the jQuery used to make it happen.</p>
+        <h3>What this page (005) does...</h3>
+        <p>This page (005) is the columination of the previous 3 projects (002, 003, and 004). Here I implement the proven fixed-column mechanism (002) with the interaction subtleties of (003) and the "make it work on all [article] items" built in (004). This combines all that together.</p>
+        <p>The effect, in written words, is that the 'secondary' div in each 'article' below will fix itself to the top of the screen when you're viewing that article and scrolling down. When you're scrolling up into a new article, that 'secondary' item will be fixed on the bottom until there is room for it to be fixed on the top.</p>
+
+        <article>
+          <div class="primary"   style="height:1500px;"></div>
+          <div class="secondary" style="height:300px;"></div>
+        </article>
+
+        <article>
+          <div class="primary"   style="height:1200px;"></div>
+          <div class="secondary" style="height:350px;"></div>
+        </article>
+
+        <article class="chimp">
+          <div class="primary"   style="height:1800px;"></div>
+          <div class="secondary" style="height:250px;"></div>
+        </article>
+
+        <article>
+          <div class="primary"   style="height:1300px;"></div>
+          <div class="secondary" style="height:400px;"></div>
+        </article>
+
+        <article>
+          <div class="primary"   style="height:1000px;"></div>
+          <div class="secondary" style="height:345px;"></div>
+        </article>
+
+        <article>
+          <div class="primary"   style="height:1400px;"></div>
+          <div class="secondary" style="height:450px;"></div>
+        </article>
+
+      </div> <!-- end: .content -->
+    </div> <!-- end: .section -->
+
+    <!-- Javascript -->
+    <script src="javascript/jquery.1.10.1.js"></script>
+    <script src="javascript/005.js"></script>
+
+  </body>
+</html>
