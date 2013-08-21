@@ -17,3 +17,7 @@ Before scaling up my mechanism to work on all 'article' items on the page, I ins
 #### 004 Artsy Columns, part 3
 
 Here, I solve the issue of "scaling up" the mechanism to work with all 'article' items on the page. Note, that this is based off '002' and doesn't yet include all effects required for my desired implementation. That will be next.
+
+#### 006 Mustache 101
+
+Quick review of the core fundamentals of Mustache. Based on this, and then simplified even further: http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-using-the-mustache-template-library/
