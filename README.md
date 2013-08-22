@@ -3,6 +3,9 @@
 A cleverly named repo for me to keep track of random jQuery tidbits + explorations, so I can access them later in future coding endeavors. I try to break down each fundamental lesson into a single entry. Most recent exercises are at the top!
 
 ---
+#### 008 JSON 101
+
+Explores some fundamental things you can do loading content into HTML via JSON. Including: (1) displaying content from a JSON source file, (2) counting the # of objects in a JSON feed, and (3) selecting a random item from a JSON feed.
 
 #### 007 Animation 101
 
