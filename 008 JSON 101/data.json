@@ -1,0 +1,74 @@
+{"users":[
+        {
+            "firstName":"Jim",
+            "lastName":"Morrison",
+            "joined": {
+                "month":"January",
+                "day":12,
+                "year":2012
+            }
+        },
+        {
+            "firstName":"Jack",
+            "lastName":"Johnson",
+            "joined": {
+                "month":"March",
+                "day":12,
+                "year":2012
+            }
+        },
+        {
+            "firstName":"Mick",
+            "lastName":"Jagger",
+            "joined": {
+                "month":"April",
+                "day":28,
+                "year":2010
+            }
+        },
+        {
+            "firstName":"Jimmy",
+            "lastName":"Buffett",
+            "joined": {
+                "month":"December",
+                "day":28,
+                "year":2010
+            }
+        },
+        {
+            "firstName":"Cat",
+            "lastName":"Stevens",
+            "joined": {
+                "month":"November",
+                "day":28,
+                "year":2010
+            }
+        },
+        {
+            "firstName":"Bradley",
+            "lastName":"Nowell",
+            "joined": {
+                "month":"February",
+                "day":28,
+                "year":2010
+            }
+        },
+        {
+            "firstName":"David",
+            "lastName":"Bowie",
+            "joined": {
+                "month":"May",
+                "day":28,
+                "year":2010
+            }
+        },
+        {
+            "firstName":"Ricky",
+            "lastName":"Nelson",
+            "joined": {
+                "month":"August",
+                "day":28,
+                "year":2010
+            }
+        }
+]}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Sample</title>
+    <link rel="stylesheet" type="text/css" href="css/008.css">
+</head>
+<body>
+  
+  <div style="background: #333;">
+    <div class="content static">
+      <h1>JSON 101</h1>
+      <p>This page shows some fundamental things you can do loading content into HTML via JSON. On this page, here is what is accomplished:</p>
+      <ol>
+        <li>Display each of the objects in the JSON data source file,</li>
+        <li>Display a count of the total # of objects in the source file, and</li>
+        <li>Select a random object from the source file</li>
+      </ol>
+      <p>Here is the <a href="data.json">source JSON file</a> in its raw form. Here is a great <a href="http://iviewsource.com/codingtutorials/getting-started-with-javascript-object-notation-json-for-absolute-beginners/">JSON intro tutorial</a> I strongly recommend.</p>
+    </div>
+  </div>
+  <div class="content dynamic" style="display:none;">
+    <p>There are <strong id="numObjects"></strong> items in the JSON feed.</p> 
+    <p>The name and birth month of each user in the feed is below:</p>
+    <div id="placeholder"></div>
+    <p>The randomly selected user for this session is:</p>
+    <ul>
+      <li id="user_random"></li>
+    </ul>
+  </div>
+  
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>  
+  <script>
+
+    $.getJSON('data.json', function(json) {
+
+      // ===============================================
+      // Count the # of items in the JSON
+      // ===============================================
+
+            var size = 0;
+            $.each(json.users, function(i) {
+              size++;
+            });
+
+      // ===============================================
+      // Output all items in the JSON
+      // ===============================================
+
+            var output="<ul>";
+            for (var i in json.users) {
+                output+="<li>" + json.users[i].firstName + " " + json.users[i].lastName + " – " + json.users[i].joined.month+"</li>";
+            }
+            output+="</ul>";
+
+            document.getElementById("numObjects").innerHTML=size;
+            document.getElementById("placeholder").innerHTML=output;
+
+      // ===============================================
+      // Randomly select + display one of the users
+      // ===============================================
+
+            var randEntry = Math.floor(Math.random()*size+1);
+            var randomUserName = json.users[randEntry-1].firstName + " " + json.users[randEntry-1].lastName;
+
+            $('#user_random').html(randEntry).html(randEntry + " (" + randomUserName+ ")" );
+
+      // ===============================================
+      // Fade in the content, so it is smooth like butter
+      // ===============================================
+
+            $('.dynamic').fadeIn(400);
+
+    });
+
+  </script>
+
+</body>
+</html>
