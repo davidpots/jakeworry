@@ -1,6 +1,6 @@
 # Jake Worry
 
-A cleverly named repo for me to keep track of random jQuery tidbits + explorations, so I can access them later in future coding endeavors. I try to break down each fundamental lesson into a single entry. Most recent exercises are at the top.
+A cleverly named repo for me to keep track of random jQuery tidbits + explorations, so I can access them later in future coding endeavors. I try to break down each fundamental lesson into a single entry. Most recent exercises are at the top!
 
 ---
 
