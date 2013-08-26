@@ -22,7 +22,8 @@ $(document).ready(function(){
 });
 
 // If a user cliks anywhere, resize the lines!
-$('body').click(function(){
+$('.song').click(function(){
   resizeLines();
   $('.song').toggleClass('colored');
+  return false;
 });
