@@ -9,8 +9,8 @@ function resizeLines(){
     var $line = $($lines[i]);
 
     // Sets the width of each line
-    var baseWidth = 60,
-        randomRange = 31,
+    var baseWidth = 30,
+        randomRange = 61,
         numRand = baseWidth + Math.floor(Math.random()*randomRange)+'%';
     $line.animate({width:numRand});
   }
@@ -22,6 +22,7 @@ $(document).ready(function(){
 });
 
 // If a user cliks anywhere, resize the lines!
-$(document).click(function(){
+$('body').click(function(){
   resizeLines();
+  $('.song').toggleClass('colored');
 });
