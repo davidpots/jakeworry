@@ -50,17 +50,12 @@ $.getJSON('data.json', function(json) {
   // ON CLICK: Show new song
   // ===============================================
 
-        function hideSong(){
-
-        }
-
         $('body').click(function(){
           $('.fdr').fadeOut(200, function() {
             updateCard();
           });
+          resizeLines();
           $('.fdr').fadeIn(200);
-          // resizeLines();
         });
-
 
 });
