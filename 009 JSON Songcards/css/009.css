@@ -16,14 +16,14 @@ p.intro {
 }
 #songcard {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
   background: #fff;
   padding: 24px 20px 10px;
   box-shadow: 8px 8px 0px rgba(0,0,0,0.075);
   cursor: pointer;
 }
 #songcard:active {
-  margin-top: 1px;
+  border-top: 1px solid #008fd6;
 }
 #songcard h1#title {
   font-size: 32px;
