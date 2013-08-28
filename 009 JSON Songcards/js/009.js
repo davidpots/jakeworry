@@ -24,7 +24,7 @@ $.getJSON('data.json', function(json) {
   // ===============================================
 
         var size = 0;
-        $.each(json.songs, function(i) {
+        $.each(json, function(i) {
           size++;
         });
 
@@ -34,7 +34,7 @@ $.getJSON('data.json', function(json) {
 
         function updateCard(){
           var randEntry = Math.floor(Math.random()*size+1);
-          var randomSong = json.songs[randEntry-1].title;
+          var randomSong = json[randEntry-1].title;
           $('#title').html(randEntry).html(randomSong);
         }
 

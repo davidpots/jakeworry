@@ -1,53 +1,53 @@
-{"songs":[
-        {
-            "title":"Pinball Wizard"
-        },
-        {
-            "title":"Rocket Man"
-        },
-        {
-            "title":"Space Oddity"
-        },
-        {
-            "title":"Rivers of Babylon"
-        },
-        {
-            "title":"Ants Marching"
-        },
-        {
-            "title":"Cats in the Cradle"
-        },
-        {
-            "title":"Inaudible Melodies"
-        },
-        {
-            "title":"Doomsday"
-        },
-        {
-            "title":"Emmylou"
-        },
-        {
-            "title":"Santeria"
-        },
-        {
-            "title":"Lola"
-        },
-        {
-            "title":"Redemption Song"
-        },
-        {
-            "title":"Margaritaville"
-        },
-        {
-            "title":"Here I Go Again"
-        },
-        {
-            "title":"Fall Line"
-        },
-        {
-            "title":"Long Black Veil"
-        },
-        {
-            "title":"Folsom Prison Blues"
-        }
-]}
+[
+    {
+        "title":"Pinball Wizard"
+    },
+    {
+        "title":"Rocket Man"
+    },
+    {
+        "title":"Space Oddity"
+    },
+    {
+        "title":"Rivers of Babylon"
+    },
+    {
+        "title":"Ants Marching"
+    },
+    {
+        "title":"Cats in the Cradle"
+    },
+    {
+        "title":"Inaudible Melodies"
+    },
+    {
+        "title":"Doomsday"
+    },
+    {
+        "title":"Emmylou"
+    },
+    {
+        "title":"Santeria"
+    },
+    {
+        "title":"Lola"
+    },
+    {
+        "title":"Redemption Song"
+    },
+    {
+        "title":"Margaritaville"
+    },
+    {
+        "title":"Here I Go Again"
+    },
+    {
+        "title":"Fall Line"
+    },
+    {
+        "title":"Long Black Veil"
+    },
+    {
+        "title":"Folsom Prison Blues"
+    }
+]
