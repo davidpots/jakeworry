@@ -9,21 +9,21 @@ body {
 p.intro {
   color: #fff;
   text-align: center;
-  margin: 80px 0;
+  margin: 80px 0 40px 0;
   font-weight: 300;
   font-size: 14px;
   letter-spacing: 1px;
 }
+p.intro a { 
+  color: gold;
+}
 #songcard {
-  width: 320px;
-  margin: 0 auto 0 auto;
+  width: 256px;
+  margin: 0 auto 32px auto;
   background: #fff;
   padding: 24px 20px 10px;
   box-shadow: 8px 8px 0px rgba(0,0,0,0.075);
   cursor: pointer;
-}
-#songcard:active {
-  border-top: 1px solid #008fd6;
 }
 #songcard h1#title {
   font-size: 32px;
@@ -39,4 +39,11 @@ p.intro {
   margin: 0 0 6px 0;
   background: #ccc;
   display: block;
+}
+p.links { 
+  text-align: center;
+  margin-bottom: 40px;
+}
+p.links a {
+  color: gold;
 }

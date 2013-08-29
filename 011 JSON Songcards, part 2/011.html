@@ -7,53 +7,20 @@
     <link rel="stylesheet" type="text/css" href="css/011.css">
 </head>
 <body>
-  <p class="intro">Click anywhere to generate a new song.</p>  
-  <div id="songcard" style="display:none;">
-    <h1 id="title" class="fdr"></h1>
-    <p class="fdr">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-    <p class="fdr">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-    <p class="fdr">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-    <p class="fdr">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-    <p class="fdr">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-    <p class="fdr">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-    <p class="fdr">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </p>
-  </div>
 
+  <div style="width: 600px; margin: auto;">
+    <p class="intro">This pulls from <a href="data.json">this JSON file</a>, which includes data for all songs currently in the <a href="http://www.songnotes.cc">Songnotes</a> catalog. On page load, a random song is pulled from the JSON array and displayed below. My goal here is to begin exploring how I can leverage the Songnotes database in micro-apps that don't require me to use Rails.</p>  
+    <p class="links">
+      <a id="song_link" href="#">learn to play this song</a>&nbsp;|&nbsp;
+      <a id="show_diff" href="#">show me a different song</a>
+    </p>    
+    <div id="songcard" style="display:none;">
+      <img id="img" src="" class="fdr" width="256" height="256" />
+      <h1 id="title" class="fdr"></h1>
+      <h2 id="artist" class="fdr"></h2>
+      <h3 id="year" class="fdr"></h3>
+    </div>
+  </div>
   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="js/011.js"></script>
 
