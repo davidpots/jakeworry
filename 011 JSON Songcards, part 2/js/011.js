@@ -1,5 +1,16 @@
+function AnimateRotate(d){
+    $({deg: 0}).animate({deg: d}, {
+        step: function(now, fx){
+            $(".refresh_wrap a img").css({
+                 transform: "rotate(" + now + "deg)"
+            });
+        }
+    });
+}
 
-
+$('.refresh_wrap a img').click(function(){
+  AnimateRotate(180);  
+});
 
 $.getJSON('data.json', function(json) {
 
@@ -19,10 +30,11 @@ $.getJSON('data.json', function(json) {
         function updateCard(){
           var randEntry = Math.floor(Math.random()*size+1);
           var randomSong = json[randEntry-1];
-          $('#title').html(randomSong.song_title);
+          $('#song').html(randomSong.song_title);
           $('#artist').html(randomSong.song_artist_name);
-          $('#song_link').attr('href',randomSong.song_url);
-          $('#img').attr('src',randomSong.song_artist_img);
+          $('#year').html(randomSong.song_year);
+          $('.song_link').attr('href',randomSong.song_url);
+          $('.img').attr('src',randomSong.song_artist_img);
         }
 
   // ===============================================
@@ -30,13 +42,13 @@ $.getJSON('data.json', function(json) {
   // ===============================================
 
         updateCard();
-        $('#songcard').fadeIn(400);
+        $('#card2 .fdr').fadeIn(400);
 
   // ===============================================
   // ON CLICK: Show new song
   // ===============================================
 
-        $('#show_diff').click(function(){
+        $('#refresh').click(function(){
           $('.fdr').fadeOut(200, function() {
             updateCard();
           });

@@ -1,3 +1,14 @@
+/* -- SETUP -- */
+
+        * {
+          margin: 0;
+          padding: 0;
+          position: relative;
+          -webkit-box-sizing: border-box;
+             -moz-box-sizing: border-box;
+                  box-sizing: border-box;
+        }
+
 body {
   background: #008fd6;
   margin: 0; padding: 0;
@@ -17,33 +28,33 @@ p.intro {
 p.intro a { 
   color: gold;
 }
-#songcard {
-  width: 256px;
-  margin: 0 auto 32px auto;
-  background: #fff;
-  padding: 24px 20px 10px;
-  box-shadow: 8px 8px 0px rgba(0,0,0,0.075);
-  cursor: pointer;
+
+/* -- */
+
+#card2 { width: 260px; margin: 0 auto 32px; position: relative; overflow: hidden; box-shadow: 5px 5px 0px rgba(0,0,0,0.075); display: block;  text-decoration: none; height: 320px; }
+#card2 .fdr { display: none; }
+#card2:active { margin-top: 1px; }
+#card2 div.blur-overlay { width: 320px; height: 320px; position: absolute; z-index: 2; background-color: rgba(0,0,0,0.5); }
+#card2 img.blur { -webkit-filter: saturate(2) grayscale(0.5) blur(30px); width: 500px; height: 500px; position: absolute; left: -30px; top: -140px; z-index: 1; }
+#card2 img.avatar { width: 90px; height: 90px; top: 45px; left: 85px; z-index: 4; position: absolute; border-radius: 45px; }
+#card2 .content { z-index: 3; top: 90px; position: absolute; right: 0; left: 0; bottom: 0; background: #fff; padding: 55px 15px 12px; }
+#card2 .content h1 { margin: 0; padding: 0; text-align: center; }
+#card2 .content #artist { font-size: 14px; font-weight: normal; color: #666; margin-bottom: 7px; }
+#card2 .content #song { font-size: 24px; line-height: 28px; font-weight: 600; color: #f75800; }
+#card2 .content #year { text-align: center; font-size: 14px; color: #bbb; font-weight: normal; position: absolute; bottom: 15px; left: 0; right: 0; } 
+#card2 .tbl-ctr-otr { display: table; width: 100%; height: 120px; vertical-align: middle; }
+#card2 .tbl-ctr-inr { display: table-cell; text-align: center; vertical-align: middle; }
+
+.refresh_wrap { margin: 0 auto; width: 40px; }
+.refresh_wrap a { display: block; width: 40px; height: 30px; }
+.refresh_wrap a img { width: 40px; height: 30px; }
+
+@-webkit-keyframes pop-in { 
+  0% { -webkit-transform:scale(0.8) }
+  80%{-webkit-transform:scale(1.1) }
+  100%{-webkit-transform:scale(1)}
 }
-#songcard h1#title {
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 36px;
-  margin: 0 0 20px 0;
-  color: #555;
-}
-#songcard span {
-  height: 6px;
-  border-radius: 3px;
-  width: 100%;
-  margin: 0 0 6px 0;
-  background: #ccc;
-  display: block;
-}
-p.links { 
-  text-align: center;
-  margin-bottom: 40px;
-}
-p.links a {
-  color: gold;
-}
+.anim-pop-in:active {-webkit-animation:pop-in .1s linear}
+
+
+

@@ -10,16 +10,26 @@
 
   <div style="width: 600px; margin: auto;">
     <p class="intro">This pulls from <a href="data.json">this JSON file</a>, which includes data for all songs currently in the <a href="http://www.songnotes.cc">Songnotes</a> catalog. On page load, a random song is pulled from the JSON array and displayed below. My goal here is to begin exploring how I can leverage the Songnotes database in micro-apps that don't require me to use Rails.</p>  
-    <p class="links">
-      <a id="song_link" href="#">learn to play this song</a>&nbsp;|&nbsp;
-      <a id="show_diff" href="#">show me a different song</a>
-    </p>    
-    <div id="songcard" style="display:none;">
-      <img id="img" src="" class="fdr" width="256" height="256" />
-      <h1 id="title" class="fdr"></h1>
-      <h2 id="artist" class="fdr"></h2>
-      <h3 id="year" class="fdr"></h3>
+
+    <a id="card2" class="song_link" href="">
+      <div class="blur-overlay"></div>
+      <img class="img blur fdr" src="" />
+      <img class="img avatar fdr" src="" />
+      <div class="content">
+        <div class="tbl-ctr-otr">
+          <div class="tbl-ctr-inr">
+            <h1 id="artist" class="fdr"></h1>
+            <h1 id="song" class="fdr"></h1>
+          </div>
+        </div>
+        <h1 id="year" class="fdr"></h1>
+      </div>
+    </a>
+
+    <div class="refresh_wrap">
+      <a id="refresh" class="anim-pop-in" href="#"><img src="images/refresh.png" /></a>
     </div>
+
   </div>
   <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <script src="js/011.js"></script>
