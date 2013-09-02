@@ -3,6 +3,12 @@
 A cleverly named repo for me to keep track of random jQuery tidbits + explorations, so I can access them later in future coding endeavors. I try to break down each fundamental lesson into a single entry. Most recent exercises are at the top!
 
 ---
+
+#### 012: JSON + Mustache, via AJAX
+Quite simply, this reads <a href="data.json">this JSON file</a> via AJAX call and then displays the contents via a mustache template. This is using JSON generated from the most up-to-date version of the Songnotes catalog, sorted by song name.
+
+#### 009, 010, 011 ....
+
 #### 008 JSON 101
 
 Explores some fundamental things you can do loading content into HTML via JSON. Including: (1) displaying content from a JSON source file, (2) counting the # of objects in a JSON feed, and (3) selecting a random item from a JSON feed.
