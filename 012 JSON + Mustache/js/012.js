@@ -15,9 +15,14 @@ var data, size = 0;
 
 // core template of the HTML we'll write into  
 template = "\
-<ul>\
+<ul class='songlist'>\
   {{#songs}}\
-  <li> {{song_title}} by {{song_artist_name}} </li>\
+  <li>\
+    <a href='#''>\
+      <h2>{{song_title}}</h2>\
+      <p>{{song_artist_name}}</p>\
+    </a>\
+  </li>\
   {{/songs}}\
 </ul>\
 ";

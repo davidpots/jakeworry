@@ -1,17 +1,29 @@
-      body {
-        margin: 0; padding: 0;
-        font-family: Arial;
-        font-size: 14px;
-        line-height: 20px;
-      }
-      .content {
-        width: 800px;
-        margin: 0 auto;
-      }
-      .static {
-        color: #aaa;
-        padding: 32px 0;
-      }
-      .static a {
-        color: gold;
-      }
+/* -- SETUP -- */
+
+    * {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+/* -- GENERAL -- */
+
+    section         { padding: 14px; }
+
+/* -- SONG LIST -- */
+
+    .songlist                 { margin: 0 0 32px 0; }
+    .songlist li              { list-style: none; border-bottom: 1px solid #ddd; }
+    .songlist li:first-child  { border-top: 1px solid #ddd; }
+    .songlist li a            { display: block; text-decoration: none; font-weight: bold; color: #777; padding: 10px 14px 8px; }
+    .songlist li a h2         { font-size: 16px; line-height: 19px; color: #f75800; margin: 0 0 2px 0; }
+    .songlist li a p          { font-size: 13px; line-height: 15px; }
