@@ -18,7 +18,7 @@ template = "\
 <ul class='songlist'>\
   {{#songs}}\
   <li>\
-    <a href='#''>\
+    <a href='{{song_url}}'>\
       <h2>{{song_title}}</h2>\
       <p>{{song_artist_name}}</p>\
     </a>\
