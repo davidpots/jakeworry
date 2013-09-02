@@ -35,7 +35,7 @@ document.getElementById('target').innerHTML = html;
 
 // ------------------
 
-// To do:
+// To do?
 // 1. count the songs
 // 2. randomly select a song
 // 3. how to sort them by name || artist || year?
