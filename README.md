@@ -7,7 +7,14 @@ A cleverly named repo for me to keep track of random jQuery tidbits + exploratio
 #### 012: JSON + Mustache, via AJAX
 Quite simply, this reads <a href="data.json">this JSON file</a> via AJAX call and then displays the contents via a mustache template. This is using JSON generated from the most up-to-date version of the Songnotes catalog, sorted by song name.
 
-#### 009, 010, 011 ....
+#### 011 JSON Songcards, part 2
+This pulls from <a href="data.json">this JSON file</a>, which includes data for all songs currently in the <a href="http://www.songnotes.cc">Songnotes</a> catalog. On page load, a random song is pulled from the JSON array and displayed below. My goal here is to begin exploring how I can leverage the Songnotes database in micro-apps that don't require me to use Rails.
+
+#### 010 HTML to JSON
+Wanting to explore different ways to get my Postgres database content into customized JSON format, I explore using a HTML-to-JSON jQuery plugin.
+
+#### 009 JSON Songcards
+Reads from a JSON file containing a few dozen records. Picks one at random + generates some random graphical lines that aniamte into place. A prototype leading to what will be project 011.
 
 #### 008 JSON 101
 
