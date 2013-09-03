@@ -1,3 +1,7 @@
+// I started with this one but ran into string/object/array headaches
+// http://jsfiddle.net/VAKrE/378/
+
+// Then found this one which works but seems like it may be overkill for my current barebones requirements. Mess with stripping down later?
 // via http://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
 var sort_by = function(field, reverse, primer){
    var key = function (x) {return primer ? primer(x[field]) : x[field]};
