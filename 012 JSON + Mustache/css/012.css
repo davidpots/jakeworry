@@ -10,7 +10,7 @@
     }
 
     body {
-      font-family: Arial;
+      font-family: Oxygen, Arial;
       font-size: 14px;
       line-height: 20px;
     }
@@ -24,6 +24,9 @@
     .songlist                 { margin: 0 0 32px 0; }
     .songlist li              { list-style: none; border-bottom: 1px solid #ddd; }
     .songlist li:first-child  { border-top: 1px solid #ddd; }
-    .songlist li a            { display: block; text-decoration: none; font-weight: bold; color: #777; padding: 10px 14px 8px; }
-    .songlist li a h2         { font-size: 16px; line-height: 19px; color: #f75800; margin: 0 0 2px 0; }
+    .songlist li a            { display: block; text-decoration: none; color: #888; padding: 12px 14px 10px; background: url(../images/carrot.svg) 97% center no-repeat; }
+    .songlist li a:hover,
+    .songlist li a:active,
+    .songlist li a:focus      { background-color: #ddffff; }
+    .songlist li a h2         { font-size: 16px; line-height: 19px; color: #444; margin: 0 0 5px 0; font-weight: bold; }
     .songlist li a p          { font-size: 13px; line-height: 15px; }
