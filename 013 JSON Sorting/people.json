@@ -1,0 +1,18 @@
+{"people":[
+  { "myKey": "A", "status": 0 },
+  { "myKey": "D", "status": 3 },
+  { "myKey": "G", "status": 7 },
+  { "myKey": "H", "status": 8 },
+  { "myKey": "I", "status": 9 },
+  { "myKey": "J", "status": 10 },
+  { "myKey": "C", "status": 2 },
+  { "myKey": "B", "status": 2 },
+  { "myKey": "C", "status": 1 },
+  { "myKey": "D", "status": 4 },
+  { "myKey": "F", "status": 6 },
+  { "myKey": "K", "status": 11 },
+  { "myKey": "L", "status": 12 },
+  { "myKey": "E", "status": 5 },
+  { "myKey": "M", "status": 13 },
+  { "myKey": "N", "status": 14 }
+]}
