@@ -5,13 +5,13 @@ A cleverly named repo for me to keep track of random jQuery tidbits + exploratio
 ---
 
 #### 013: JSON Sorting
-Building off of 012, this takes <a href="013 JSON Sorting/acc.json">this JSON file</a> and gives the user a few ways to sort the data -- which they can freely toggle between by means of a UI on the page.
+Building off of 012, this takes a JSON file and gives the user a few ways to sort the data -- which they can freely toggle between by means of a UI on the page.
 
 #### 012: JSON + Mustache, via AJAX
-Quite simply, this reads <a href="012 JSON + Mustache/data.json">this JSON file</a> via AJAX call and then displays the contents via a mustache template. This is using JSON generated from the most up-to-date version of the Songnotes catalog, sorted by song name.
+Quite simply, this reads a JSON file via AJAX call and then displays the contents via a mustache template. This is using JSON generated from the most up-to-date version of the Songnotes catalog, sorted by song name.
 
 #### 011 JSON Songcards, part 2
-This pulls from <a href="011 Json Songcards, part 2/data.json">this JSON file</a>, which includes data for all songs currently in the <a href="http://www.songnotes.cc">Songnotes</a> catalog. On page load, a random song is pulled from the JSON array and displayed below. My goal here is to begin exploring how I can leverage the Songnotes database in micro-apps that don't require me to use Rails.
+This pulls from a JSON file, which includes data for all songs currently in the <a href="http://www.songnotes.cc">Songnotes</a> catalog. On page load, a random song is pulled from the JSON array and displayed below. My goal here is to begin exploring how I can leverage the Songnotes database in micro-apps that don't require me to use Rails.
 
 #### 010 HTML to JSON
 Wanting to explore different ways to get my Postgres database content into customized JSON format, I explore using a HTML-to-JSON jQuery plugin.
