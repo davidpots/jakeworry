@@ -12,13 +12,19 @@
 
   <section>
 
-    <h1 style="margin-bottom: 12px;">013: JSON Sorting</h1>
-    <p>This WILL take 012 (which reads <a href="data.json">this JSON file</a>) then and explores sorting the data in different ways.</p>
-    <p>For now, look at 013.js and the console. Working it out. Two methods are working now, one too simple and the other too complex. Will figure it out for my needs on next pass.</p>
+    <h1>013: JSON Sorting</h1>
+    <p>Building off of 012, this takes <a href="acc.json">this JSON file</a> and gives the user a few ways to sort the data -- which they can freely toggle between by means of a UI on the page.</p>
+    <p>This is done via a custom sort function (I found <a href="http://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects">via this page</a>) that accepts any key/parameter you give it. You can use this to sort by whatever key you like. It never touches the core JSON source file -- this is read once when the page loads, dumped into a variable, and then manipulated via JS/jQuery.</p>
+
+    <h2>Schools of the ACC:</h2>
+    <p>
+      <a id="liveSchool" class="sorter active" href="#">by name</a> | 
+      <a id="liveMascot" class="sorter" href="#">by mascot</a> | 
+      <a id="liveCost" class="sorter" href="#">by cost</a>
+    </p>
+    <div id="live"></div>
 
   </section>
-
-  <div id="target"></div>
 
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="js/mustache.js"></script>

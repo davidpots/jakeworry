@@ -1,57 +1,99 @@
-var data;
+// ===============================================
+// Setup the HTML Mustache template
+// ===============================================
+
+      // This is what we'll eventually dump the content into
+      template = "\
+      <ul class='songlist'>\
+        {{#acc}}\
+        <li>\
+          <a>\
+            <h2>{{school}}</h2>\
+            <p>{{cost}}</p>\
+            <p>{{mascot}}</p>\
+          </a>\
+        </li>\
+        {{/acc}}\
+      </ul>\
+      ";
 
 // ===============================================
-  // Fetch the data
-  // ===============================================
+// Setup the Sort function
+// ===============================================
 
+      // via http://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
+      // give either "true" or "false" to the "reverse" parameter to swap asc/desc
+      // the "primer" paramater is optional
+      var sort_by = function(field, reverse, primer){
+         var key = function (x) {return primer ? primer(x[field]) : x[field]};
+         return function (a,b) {
+             var A = key(a), B = key(b);
+             return ((A < B) ? -1 : (A > B) ? +1 : 0) * [-1,1][+!!reverse];                  
+         }
+      }
+
+// ===============================================
+// Fetch the data
+// ===============================================
+
+      var data;
       $.ajax({
         async: false,
-        url: 'people.json',
+        url: 'acc.json',
         success: function(myJson) {
           data = myJson;
         }
       });
+      // the JSON is now accessible via the variable "data"
 
+// ===============================================
+// Example usage, dumped to console
+// ===============================================
 
+      // Show the default state of the JSON data
+      jsonBefore = JSON.stringify(data);
+      console.log("Before sort: " + JSON.stringify(jsonBefore));
 
-      
+      // Apply a sort
+      data.acc.sort(sort_by('mascot', true));
 
+      // Show the new state of the sorted data
+      jsonAfter = JSON.stringify(data);
+      console.log("After sort (by mascot): " + jsonAfter);
 
-// I started with this one but ran into string/object/array headaches
-// http://jsfiddle.net/VAKrE/378/
-function sortJSON(data, key) {
-    return data.sort(function(a, b) {
-        var x = a[key]; var y = b[key];
-        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
-    });
-}
-console.log("Before sort: " + JSON.stringify(data));
-sortJSON(data.people, 'myKey');
-console.log("After sort: " + JSON.stringify(data));
+// ===============================================
+// User Facing Sort Mechanism!
+// ===============================================
 
+      // DEFAULT: Sort by school, display on load
+      data.acc.sort(sort_by('school', true));
+      html = Mustache.to_html(template, data);
+      document.getElementById('live').innerHTML = html;
 
+      // Click event: any .sorter link
+      $('.sorter').click(function(){
+        $('.sorter').removeClass('active');
+        $(this).addClass('active');
+        return false;
+      });
 
+      // Click event: Sort by school
+      $('#liveSchool').click(function(){
+        data.acc.sort(sort_by('school', true));
+        html = Mustache.to_html(template, data);
+        document.getElementById('live').innerHTML = html;
+      });
 
+      // Click event: Sort by mascot
+      $('#liveMascot').click(function(){
+        data.acc.sort(sort_by('mascot', true));
+        html = Mustache.to_html(template, data);
+        document.getElementById('live').innerHTML = html;
+      });
 
-
-
-// Then found this one which works but seems like it may be overkill for my current barebones requirements. Mess with stripping down later?
-// via http://stackoverflow.com/questions/979256/sorting-an-array-of-javascript-objects
-var sort_by = function(field, reverse, primer){
-   var key = function (x) {return primer ? primer(x[field]) : x[field]};
-   return function (a,b) {
-       var A = key(a), B = key(b);
-       return ((A < B) ? -1 : (A > B) ? +1 : 0) * [-1,1][+!!reverse];                  
-   }
-}
-
-// Sort by price, high to low
-data.people.sort(sort_by('price', false, parseInt));
-// Sort by city, A-Z
-data.people.sort(sort_by('myKey', true));
-// etc
-
-for (var i = 0; i < data.people.length; i++) {
-    // Loop through array, display city name
-    console.log(data.people[i].myKey);
-}
+      // Click event: Sort by cost
+      $('#liveCost').click(function(){
+        data.acc.sort(sort_by('cost', false, parseInt));
+        html = Mustache.to_html(template, data);
+        document.getElementById('live').innerHTML = html;
+      });
