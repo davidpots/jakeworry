@@ -4,6 +4,9 @@ A cleverly named repo for me to keep track of random jQuery tidbits + exploratio
 
 ---
 
+#### 014: JSON Grouping
+In which we take an array of song objects, group them by year, and display the year-groups from newest to oldest. Re-covering some core fundamentals of handling objects, arrays, and the like. Next project, I'll want to clean up + make more efficient this code, as well as eventually let users group by anything (not just 'year').
+
 #### 013: JSON Sorting
 Building off of 012, this takes a JSON file and gives the user a few ways to sort the data -- which they can freely toggle between by means of a UI on the page.
 

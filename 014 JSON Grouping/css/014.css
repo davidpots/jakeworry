@@ -17,21 +17,20 @@
 
 /* -- GENERAL -- */
 
-    section         { padding: 14px; }
+    section         { padding: 35px; }
+
+    hr { margin: 20px 0; }
 
     h1 { margin: 24px 0; font-size: 40px; }
-    h2 { margin: 20px 0 15px 0; font-size: 24px; }
+    h2 { margin: 0px 0 15px 0; font-size: 24px; background: gold; display: inline-block; padding: 10px 11px; }
     p  { margin: 0 0 10px 0; }
-    ul { margin: 0 0 12px 0; }
+    ul { margin: 0 0 12px 19px; }
     .sorter.active  { display: inline-block; padding: 3px; background: yellow; }
 
 /* -- SONG LIST -- */
 
-    .songlist                 { margin: 0 0 32px 0; }
-    .songlist li              { list-style: none; border-bottom: 1px solid #ddd; padding: 10px; }
-    .songlist li:first-child  { border-top: 1px solid #ddd; }
-    .songlist li h2         { font-size: 16px; line-height: 19px; color: #444; margin: 0 0 5px 0; font-weight: bold; }
+
+    .songlist li              {  }
     .songlist li p          { font-size: 13px; line-height: 15px; margin: 0; }
     .songlist li p .secondary { color: #ccc; }
-    .songlist li h2,
     .songlist li p          { margin-right: 23px; }
