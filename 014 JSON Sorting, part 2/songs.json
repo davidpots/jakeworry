@@ -1,4 +1,4 @@
-{"songs":[
+[
   { "title": "Only Son of the Ladiesman",
     "artist": "Father John Misty",
     "year": 2012 },
@@ -20,4 +20,90 @@
   { "title": "Acid Tongue",
     "artist": "Jenny Lewis",
     "year": 2008 }
-]}
+];
+
+// {"songs":[],"networks":[]}
+
+// {
+//   "podcasts" : [ ],
+//   "networks" : [ ]
+// }
+
+// data = { "episodes": [ ] }
+
+// data = { "networks": [ "Fox","NBC","CBS","AMC" ] }
+
+// data = [ "Fox","NBC","CBS","AMC" ];
+
+// networks = [ network1, network2, network3, network4 ];
+
+// networks = [  network1, 
+//               network2,
+//               network3,
+//               network4 ];
+
+// // An array of objects
+// networks = [  { "name":"network1" }, 
+//               { "name":"network2" },
+//               { "name":"network3" },
+//               { "name":"network4" } 
+//            ];
+
+// // An array of objects, where each object has 2 key-value pairs
+// networks = [  { "name":"network1",
+//                 "city":"baltimore" }, 
+//               { "name":"network2",
+//                 "city":"new york" },
+//               { "name":"network3",
+//                 "city":"las vegas" },
+//               { "name":"network4",
+//                 "city":"portland" } 
+//            ];
+
+// data = { "networks": [ "Fox","NBC","CBS","AMC" ],
+//          "devices" : [ "Apple TV","Roku","iPad"] }
+
+
+// // people is a collection of person objects
+// {
+//   "episodes": [ ],
+//   "podcasts": [ ],
+//   "networks": [ ],
+//   "people:" : [ ]
+// }
+
+
+
+
+
+
+
+
+
+
+
+// {
+//   "songs": [
+//   ],
+//   "networks": [
+//   ]
+// }
+
+// {
+//   "songs"    : [ 
+//                   {
+//                     "title"  : "Only Son of the Ladiesman",
+//                     "artist" : "Father John Misty",
+//                     "year"   : 2012
+//                   },
+//                   { "title": "Cape Canaveral",
+//                     "artist": "Conor Oberst",
+//                     "year": 2008
+//                   },
+//                   { "title": "Acid Tongue",
+//                     "artist": "Jenny Lewis",
+//                     "year": 2008
+//                    }
+//                ],
+//   "networks" : [ ]
+// }
