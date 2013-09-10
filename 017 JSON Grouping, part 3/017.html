@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>JSON Song List</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/017.css">
+</head>
+<body>
+
+  <!-- Content ============================================================ -->
+
+  <section>
+
+    <h1>017: JSON Grouping, part 3</h1>
+    <p>View <a href="#" class="sorter srt_default srt_active">default list</a> or <a href="#" class="sorter srt_byYear">group by year</a>.</p>
+
+  </section>
+
+  <div id="target"></div>  
+
+  <!-- Template =========================================================== -->
+
+  <script id="song_template" type="text/mustache">
+    <h2 class="g_hdr">All Songs</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <h2>{{title}}</h2>
+          <p>{{artist}} <span style='color:#ccc;'>({{year}})</span></p>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+  </script>
+
+  <script id="byYear_template" type="text/mustache">
+    {{#byYear}}
+    <h2 class="g_hdr">{{year}}</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <h2>{{title}}</h2>
+          <p>{{artist}}</p>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+    {{/byYear}}
+  </script>
+
+  <!-- Javascript ========================================================= -->
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/mustache.js"></script>
+  <script src="js/017.js"></script>
+
+</body>
+</html>

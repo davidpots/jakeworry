@@ -1,0 +1,39 @@
+/* -- SETUP -- */
+
+    * {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+
+    body {
+      font-family: Oxygen, Arial;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+/* -- GENERAL -- */
+
+    section         { padding: 14px; }
+    h1              { margin: 21px 0; }
+    p               { margin: 0 0 18px 0; }
+
+/* -- SONG LIST -- */
+
+    h2.g_hdr                  { padding: 10px 14px 8px; font-size: 14px; background: #eaeaea; color: #555; letter-spacing: 1px; }
+    .sorter.srt_active        { display: inline-block; background: yellow; padding: 2px 0; }
+
+    .songlist                 { margin: 0; }
+    .songlist li              { list-style: none; border-bottom: 1px solid #ddd; }
+    .songlist li:first-child  { border-top: 1px solid #ddd; }
+    .songlist li a            { display: block; text-decoration: none; color: #888; padding: 12px 14px 10px; background: url(../images/carrot.svg) right center no-repeat; background-size: 12px 12px; border-right: 14px solid transparent; }
+    .songlist li a:hover,
+    .songlist li a:active,
+    .songlist li a:focus      { background-color: #ddffff; }
+    .songlist li a h2         { font-size: 16px; line-height: 19px; color: #444; margin: 0 0 5px 0; font-weight: bold; }
+    .songlist li a p          { font-size: 13px; line-height: 15px; margin: 0; }
+    .songlist li a h2,
+    .songlist li a p          { margin-right: 23px; }
