@@ -4,19 +4,58 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-    <title>JSON Grouping, part 2</title>
+    <title>JSON Song List</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/015.css">
 </head>
 <body>
 
+  <!-- Content ============================================================ -->
+
   <section>
 
     <h1>015: JSON Grouping, part 2</h1>
-    <p>In progress! A recreation of 014 but with cleaner code, and eventually letting users change how they sort it (by year, by artist, by title).</p>
-    
-    <hr />
+    <p>This refines the work done in 014. There is the same basic functionality, but the code cleaned up quite a bit (which draws from 016, which was technically created before 015). This does not yet let you group by more than a single criteria (year, in this case) -- that will come in future exercises.</p>
+    <p>View <a href="#" class="sorter srt_default srt_active">default list</a> or <a href="#" class="sorter srt_byYear">group by year</a>.</p>
 
   </section>
+
+  <div id="target"></div>  
+
+  <!-- Template =========================================================== -->
+
+  <script id="song_template" type="text/mustache">
+    <h2 class="g_hdr">All Songs</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <h2>{{title}}</h2>
+          <p>{{artist}} <span style='color:#ccc;'>({{year}})</span></p>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+  </script>
+
+  <script id="byYear_template" type="text/mustache">
+    {{#byYear}}
+    <h2 class="g_hdr">{{year}}</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <h2>{{title}}</h2>
+          <p>{{artist}}</p>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+    {{/byYear}}
+  </script>
+
+  <!-- Javascript ========================================================= -->
 
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="js/mustache.js"></script>
