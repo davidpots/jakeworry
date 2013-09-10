@@ -4,6 +4,12 @@ A cleverly named repo for me to keep track of random jQuery tidbits + exploratio
 
 ---
 
+#### 016: JSON + Mustache, refined
+A quick pass to refine the basic template I'm using to work with JSON/AJAX/JS/Mustache, via help from Brody.
+
+#### 015: JSON Grouping, part 2
+More of the same from 014, but the code is cleaned up quite a bit (and brings in some of the refinements from 016). Lets users view songs by default sort order, or grouped by year.
+
 #### 014: JSON Grouping
 In which we take an array of song objects, group them by year, and display the year-groups from newest to oldest. Re-covering some core fundamentals of handling objects, arrays, and the like. Next project, I'll want to clean up + make more efficient this code, as well as eventually let users group by anything (not just 'year').
 
