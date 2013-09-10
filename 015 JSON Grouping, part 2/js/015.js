@@ -50,7 +50,7 @@
                 for (i = 0; i < music.byYear.length; i++) {
                   for (var x = 0; x < data.songs.length; x++) {
                     if (data.songs[x].year === music.byYear[i].year) {
-                      music.byYear[i].songs.push({"title":data.songs[x].title,"artist":data.songs[x].artist});
+                      music.byYear[i].songs.push({"title":data.songs[x].title,"artist":data.songs[x].artist,"web_url":data.songs[x].web_url});
                     }
                   }
                 }
