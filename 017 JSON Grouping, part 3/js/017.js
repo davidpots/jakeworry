@@ -149,7 +149,7 @@
 
                       // On page load, show by default sort
                       $(document).ready(function(){
-                        sortDefault();
+                        sortByTitle();
                       });
 
                       // If you click on the sort control

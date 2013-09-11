@@ -23,13 +23,13 @@
 
 /* -- SONG LIST -- */
 
-    h2.g_hdr                  { padding: 10px 14px 8px; font-size: 14px; background: #eaeaea; color: #555; letter-spacing: 1px; }
+    h2.g_hdr                  { padding: 10px 14px 8px; font-size: 14px; background: #777; color: #fff; letter-spacing: 1px; }
     .sorter.srt_active        { display: inline-block; background: yellow; padding: 2px 0; }
 
     .songlist                 { margin: 0; }
     .songlist li              { list-style: none; border-bottom: 1px solid #ddd; }
     .songlist li:first-child  { border-top: 1px solid #ddd; }
-    .songlist li a            { display: block; text-decoration: none; color: #888; padding: 12px 14px 10px; background: url(../images/carrot.svg) right center no-repeat; background-size: 12px 12px; border-right: 14px solid transparent; }
+    .songlist li a            { display: block; text-decoration: none; color: #888; padding: 14px 14px 12px; background: url(../images/carrot.svg) right center no-repeat; background-size: 12px 12px; border-right: 14px solid transparent; }
     .songlist li a:hover,
     .songlist li a:active,
     .songlist li a:focus      { background-color: #ddffff; }
