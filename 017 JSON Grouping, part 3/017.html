@@ -16,7 +16,7 @@
   <section>
 
     <h1>017: JSON Grouping, part 3</h1>
-    <p>View <a href="#" class="sorter srt_default srt_active">default list</a> or <a href="#" class="sorter srt_byYear">group by year</a>.</p>
+    <p>Group <a href="#" class="sorter srt_byYear">by year</a> or <a href="#" class="sorter srt_byArtist">by Artist</a> or <a href="#" class="sorter srt_byTitle">by title</a>. Or, view the <a href="#" class="sorter srt_default srt_active">default list</a>.</p>
 
   </section>
 
@@ -45,13 +45,45 @@
       {{#songs}}
       <li>
         <a href='{{web_url}}'>
-          <h2>{{title}}</h2>
           <p>{{artist}}</p>
+          <h2>{{title}}</h2>
         </a>
       </li>
       {{/songs}}
     </ul>
     {{/byYear}}
+  </script>
+
+  <script id="byArtist_template" type="text/mustache">
+    {{#byArtist}}
+    <h2 class="g_hdr">{{artistKey}}</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <p>{{artist}}</p>
+          <h2>{{title}}</h2>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+    {{/byArtist}}
+  </script>
+
+  <script id="byTitle_template" type="text/mustache">
+    {{#byTitle}}
+    <h2 class="g_hdr">{{titleKey}}</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <p>{{artist}}</p>
+          <h2>{{title}}</h2>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+    {{/byTitle}}
   </script>
 
   <!-- Javascript ========================================================= -->
