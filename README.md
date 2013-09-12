@@ -4,6 +4,9 @@ A cleverly named repo for me to keep track of random jQuery tidbits + exploratio
 
 ---
 
+#### 018: JSON Grouping, part 4
+In progress. Refines 017 to be much more elegant, using less repeated code. Not complete yet.
+
 #### 017: JSON Grouping, part 3
 Another pass at refining + adding complexity to the grouping code I wrote in 014 and 015. This starts with the same flat JSON song list, and the manipulates the data to be grouped by either song title, aritst, or year. Also begins using some text replacement / regex to tweak strings to my needs.
 

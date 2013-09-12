@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>JSON Song List</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/018.css">
+</head>
+<body>
+
+  <!-- Content ============================================================ -->
+
+  <section>
+
+    <h1>018: JSON Grouping, part 4</h1>
+    <p>Group songs <a href="#" class="srt_active sorter srt_byTitle">by title</a> or <a href="#" class="sorter srt_byArtist">by artist</a> or <a href="#" class="sorter srt_byYear">by year</a>. Or, view the <a href="#" class="sorter srt_default">default list</a>.</p>
+
+  </section>
+
+  <div id="target"></div>  
+
+  <!-- Template =========================================================== -->
+
+  <script id="song_template" type="text/mustache">
+    <h2 class="g_hdr">All Songs</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <h2>{{title}}</h2>
+          <p>{{artist}} <span style='color:#ccc;'>({{year}})</span></p>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+  </script>
+
+  <script id="byYear_template" type="text/mustache">
+    {{#byYear}}
+    <h2 class="g_hdr">{{year}}</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <p>{{artist}}</p>
+          <h2>{{title}}</h2>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+    {{/byYear}}
+  </script>
+
+  <script id="byArtist_template" type="text/mustache">
+    {{#byArtist}}
+    <h2 class="g_hdr">{{artistKey}}</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <p>{{artist}}</p>
+          <h2>{{title}}</h2>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+    {{/byArtist}}
+  </script>
+
+  <script id="byTitle_template" type="text/mustache">
+    {{#byTitle}}
+    <h2 class="g_hdr">{{titleKey}}</h2>
+    <ul class='songlist'>
+      {{#songs}}
+      <li>
+        <a href='{{web_url}}'>
+          <p>{{artist}}</p>
+          <h2>{{title}}</h2>
+        </a>
+      </li>
+      {{/songs}}
+    </ul>
+    {{/byTitle}}
+  </script>
+
+  <!-- Javascript ========================================================= -->
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="js/mustache.js"></script>
+  <script src="js/018.js"></script>
+
+</body>
+</html>
