@@ -16,6 +16,7 @@
   <section>
 
     <h1>018: JSON Grouping, part 4</h1>
+    <p>A final pass, refining things further via prior work 014/015/016/017. Again, starts with a <a href="data.json">flat JSON data source</a> and breaks the data out into a few groups the user can group data by (year, artist, title). Specifically, this project cleans up 017 quite by cutting down on the number of loops-on-loops-on-loops. This round of project has taught me a lot about Mustache, arrays, objects, organizing code, and striking the balance between sheer efficiency and longer-term maintainability.</p>
     <p>Group songs <a href="#" class="srt_active sorter srt_byTitle">by title</a> or <a href="#" class="sorter srt_byArtist">by artist</a> or <a href="#" class="sorter srt_byYear">by year</a>. Or, view the <a href="#" class="sorter srt_default">default list</a>.</p>
 
   </section>
@@ -24,7 +25,7 @@
 
   <!-- Template =========================================================== -->
 
-  <script id="song_template" type="text/mustache">
+  <script id="sortDefault" type="text/mustache">
     <h2 class="g_hdr">All Songs</h2>
     <ul class='songlist'>
       {{#songs}}
@@ -38,7 +39,7 @@
     </ul>
   </script>
 
-  <script id="byYear_template" type="text/mustache">
+  <script id="sortByYear" type="text/mustache">
     {{#byYear}}
     <h2 class="g_hdr">{{year}}</h2>
     <ul class='songlist'>
@@ -54,7 +55,7 @@
     {{/byYear}}
   </script>
 
-  <script id="byArtist_template" type="text/mustache">
+  <script id="sortByArtist" type="text/mustache">
     {{#byArtist}}
     <h2 class="g_hdr">{{artistKey}}</h2>
     <ul class='songlist'>
@@ -70,7 +71,7 @@
     {{/byArtist}}
   </script>
 
-  <script id="byTitle_template" type="text/mustache">
+  <script id="sortByTitle" type="text/mustache">
     {{#byTitle}}
     <h2 class="g_hdr">{{titleKey}}</h2>
     <ul class='songlist'>

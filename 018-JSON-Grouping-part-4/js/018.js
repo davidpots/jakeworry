@@ -28,7 +28,6 @@
   
         // Variables I may want to access from terminal
         var songs = {},
-            songs2 = {},
             songsByTitle = {},
             songsByArtist = {},
             songsByYear = {},
@@ -36,6 +35,10 @@
 
         // The funciton that processes all the data
         var processData = function(data){
+
+          // ===============================================
+          // Pre-process all the data into groupings
+          // ===============================================
 
                 songs = data['songs'];
 
@@ -59,7 +62,7 @@
                 }
 
                 // ===============================================
-                // Sort and Click Event Mgmt
+                // Create the finalized groups in Mustache-friendly format
                 // ===============================================
 
                       // Preps the default (flat) song listing
@@ -77,44 +80,62 @@
                         music.byArtist.push({"artistKey":key,"songs":songsByArtist[key]});
                       }
 
-                      // Functions for sorting
-                      function sortDefault(){
-                        var template = $('#song_template').html(); // grab the Mustache template
-                        $('#target').html( Mustache.to_html(template,m_songs) ); // write the template content onto the page
+                // ===============================================
+                // Sort the finalized groupings...
+                // ===============================================
+
+                      // Sort the groupings:                       
+                      music.byYear.sort(sort_by('year', false)); // by year (newest to oldest)
+                      // by artist (# to A to Z)
+                      music.byArtist.sort(sort_by('artistKey', true));
+                      for(key in music.byArtist){
+                        music.byArtist[key].songs.sort(sort_by('artist', true));
                       }
-                      function sortByYear(){
-                        var template = $('#byYear_template').html(); // grab the Mustache template
-                        $('#target').html( Mustache.to_html(template,music) ); // write the template content onto the page
-                      }
-                      function sortByTitle(){
-                        var template = $('#byTitle_template').html(); // grab the Mustache template
-                        $('#target').html( Mustache.to_html(template,music) ); // write the template content onto the page
-                      }
-                      function sortByArtist(){
-                        var template = $('#byArtist_template').html(); // grab the Mustache template
-                        $('#target').html( Mustache.to_html(template,music) ); // write the template content onto the page
+                      // by title (# to A to Z)
+                      music.byTitle.sort(sort_by('titleKey', true));
+
+                // ===============================================
+                // Send the final groups to Mustache / HTML
+                // ===============================================
+
+                      // Functions for grouping
+                      var template;
+                      function uberGroup(templateName,objName){
+                        template = $(templateName).html(); // grab the Mustache template
+                        $('#target').html( Mustache.to_html(template,objName) ); // write the template content onto the page
                       }
 
-                      // On page load, show by default sort
+                      // On page load, show by default grouping
                       $(document).ready(function(){
-                        sortByTitle();
+                        uberGroup('#sortByTitle',music);
                       });
 
-                      // If you click on the sort control
+                // ===============================================
+                // Click events
+                // ===============================================
+
+                      // If you click on any grouping control
                       $('.sorter').click(function(){
                         $('.sorter').removeClass('srt_active');
                         $(this).addClass('srt_active');
-                        if ($(this).hasClass('srt_default')) {
-                          sortDefault();
-                        } else if ($(this).hasClass('srt_byYear')) {
-                          sortByYear();
-                        } else if ($(this).hasClass('srt_byArtist')) {
-                          sortByArtist();
-                        } else if ($(this).hasClass('srt_byTitle')) {
-                          sortByTitle();
-                        }
                         return false;
                       });
+
+                      // Click on DEFAULT grouping...
+                      $('.srt_default').click(function(){
+                        uberGroup('#sortDefault',m_songs); });
+
+                      // Click on YEAR grouping...
+                      $('.srt_byYear').click(function(){
+                        uberGroup('#sortByYear',music); });
+
+                      // Click on TITLE grouping...
+                      $('.srt_byTitle').click(function(){
+                        uberGroup('#sortByTitle',music); });
+
+                      // Click on ARTIST grouping...
+                      $('.srt_byArtist').click(function(){
+                        uberGroup('#sortByArtist',music); });
 
         };
 
