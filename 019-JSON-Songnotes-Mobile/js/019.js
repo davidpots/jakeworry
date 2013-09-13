@@ -1,3 +1,8 @@
+// FastClick! https://github.com/ftlabs/fastclick
+$(function() {
+    FastClick.attach(document.body);
+});
+
 // ===============================================
 // Functions
 // ===============================================
