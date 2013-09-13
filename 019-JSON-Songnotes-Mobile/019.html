@@ -25,54 +25,60 @@
   <!-- Template =========================================================== -->
 
   <script id="sortByYear" type="text/mustache">
-    {{#byYear}}
-    <h2 class="g_hdr">{{year}}</h2>
-    <ul class='songlist'>
-      {{#songs}}
-      <li>
-        <a href='{{web_url}}'>
-          <img class='thumb' src="{{img_url}}" width="40" height="40" />
-          <p>{{artist}}</p>
-          <h2>{{title}}</h2>
-        </a>
-      </li>
-      {{/songs}}
-    </ul>
-    {{/byYear}}
+    <div class="wrapper year_wrapper" style="display:none;">
+      {{#byYear}}
+      <h2 class="g_hdr">{{year}}</h2>
+      <ul class='songlist'>
+        {{#songs}}
+        <li>
+          <a href='{{web_url}}'>
+            <img class='thumb' src="{{img_url}}" width="40" height="40" />
+            <p>{{artist}}</p>
+            <h2>{{title}}</h2>
+          </a>
+        </li>
+        {{/songs}}
+      </ul>
+      {{/byYear}}
+    </div>
   </script>
 
   <script id="sortByArtist" type="text/mustache">
-    {{#byArtist}}
-    <h2 class="g_hdr">{{artistKey}}</h2>
-    <ul class='songlist'>
-      {{#songs}}
-      <li>
-        <a href='{{web_url}}'>
-          <img class='thumb' src="{{img_url}}" width="40" height="40" />
-          <p>{{artist}}</p>
-          <h2>{{title}}</h2>
-        </a>
-      </li>
-      {{/songs}}
-    </ul>
-    {{/byArtist}}
+    <div class="wrapper artist_wrapper" style="display:none;">
+      {{#byArtist}}
+      <h2 class="g_hdr">{{artistKey}}</h2>
+      <ul class='songlist'>
+        {{#songs}}
+        <li>
+          <a href='{{web_url}}'>
+            <img class='thumb' src="{{img_url}}" width="40" height="40" />
+            <p>{{artist}}</p>
+            <h2>{{title}}</h2>
+          </a>
+        </li>
+        {{/songs}}
+      </ul>
+      {{/byArtist}}
+    </div>
   </script>
 
   <script id="sortByTitle" type="text/mustache">
-    {{#byTitle}}
-    <h2 class="g_hdr">{{titleKey}}</h2>
-    <ul class='songlist'>
-      {{#songs}}
-      <li>
-        <a href='{{web_url}}'>
-          <img class='thumb' src="{{img_url}}" width="40" height="40" />
-          <p>{{artist}}</p>
-          <h2>{{title}}</h2>
-        </a>
-      </li>
-      {{/songs}}
-    </ul>
-    {{/byTitle}}
+    <div class="wrapper title_wrapper" style="display:none;">
+      {{#byTitle}}
+      <h2 class="g_hdr">{{titleKey}}</h2>
+      <ul class='songlist'>
+        {{#songs}}
+        <li>
+          <a href='{{web_url}}'>
+            <img class='thumb' src="{{img_url}}" width="40" height="40" />
+            <p>{{artist}}</p>
+            <h2>{{title}}</h2>
+          </a>
+        </li>
+        {{/songs}}
+      </ul>
+      {{/byTitle}}
+    </div>
   </script>
 
   <!-- Javascript ========================================================= -->

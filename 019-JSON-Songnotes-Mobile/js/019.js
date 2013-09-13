@@ -110,6 +110,7 @@ $(function() {
                       // On page load, show by default grouping
                       $(document).ready(function(){
                         uberGroup('#sortByTitle',music);
+                        $('.title_wrapper').fadeIn();
                       });
 
                 // ===============================================
@@ -120,20 +121,27 @@ $(function() {
                       $('.sort_ui a').click(function(){
                         $('.sort_ui a').removeClass('srt_active');
                         $(this).addClass('srt_active');
+                        $('.wrapper').fadeOut;
                         return false;
                       });
 
                       // Click on YEAR grouping...
                       $('.srt_byYear').click(function(){
-                        uberGroup('#sortByYear',music); });
+                        uberGroup('#sortByYear',music);
+                        $('.year_wrapper').fadeIn();
+                      });
 
                       // Click on TITLE grouping...
                       $('.srt_byTitle').click(function(){
-                        uberGroup('#sortByTitle',music); });
+                        uberGroup('#sortByTitle',music);
+                        $('.title_wrapper').fadeIn();
+                      });
 
                       // Click on ARTIST grouping...
                       $('.srt_byArtist').click(function(){
-                        uberGroup('#sortByArtist',music); });
+                        uberGroup('#sortByArtist',music);
+                        $('.artist_wrapper').fadeIn();
+                      });
 
         };
 
