@@ -39,9 +39,10 @@
     .songlist li a:hover,
     .songlist li a:active,
     .songlist li a:focus      { background-color: #ebf9ff; }
+    .songlist li a img        { width: 40px; height: 40px; border-radius: 20px; position: absolute; top: 50%; left: 10px; margin-top: -20px; }
     .songlist li a h2         { font-size: 16px; line-height: 19px; color: #444; margin: 0 0 0 0; font-weight: bold; }
     .songlist li a p          { font-size: 13px; line-height: 15px; margin: 0 0 5px 0; font-weight: 600; color: #aaa; }
     .songlist li a h2,
-    .songlist li a p          { margin-right: 23px; }
+    .songlist li a p          { margin-right: 23px; margin-left: 48px; }
 
 
