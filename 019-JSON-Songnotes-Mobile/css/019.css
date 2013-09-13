@@ -1,0 +1,48 @@
+/* -- SETUP -- */
+
+    * {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Open Sans", Arial;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333;
+    }
+
+/* -- GENERAL -- */
+
+    section         { padding: 14px; }
+    h1              { margin: 21px 0; }
+    p               { margin: 0 0 18px 0; }
+    a               { text-decoration: none; }
+
+/* -- SONG LIST -- */
+
+    h1                        { text-align: center; font-size: 48px; font-weight: 600; text-transform: lowercase; margin: 60px 0; }
+    h2.g_hdr                  { padding: 10px 14px 8px; font-size: 16px; background: #00adef; color: #fff; font-weight: 400; }
+    .sort_prompt              { text-align: center; font-weight: 600; color: #bbb; margin: 0 0 16px 0; font-size: 15px; }
+    .sort_ui                  { text-align: center; margin: 0 0 5px 0; }
+    .sort_ui a                { display: inline-block; padding: 0 15px; margin: 0 1px; font-size: 14px; line-height: 28px; height: 30px; border-radius: 15px; overflow: hidden; background: white; border: 1px solid #f05a28; color: #f05a28; font-weight: 600; }
+    .sort_ui a.srt_active     { background-color: #f05a28; color: #fff; }
+
+    .songlist                 { margin: 0; }
+    .songlist li              { list-style: none; border-bottom: 1px solid #ddd; }
+    .songlist li:first-child  { border-top: 1px solid #ddd; }
+    .songlist li a            { display: block; text-decoration: none; color: #888; padding: 14px 14px 12px; background: url(../images/carrot.svg) right center no-repeat; background-size: 12px 12px; border-right: 14px solid transparent; }
+    .songlist li a:hover,
+    .songlist li a:active,
+    .songlist li a:focus      { background-color: #ebf9ff; }
+    .songlist li a img        { width: 40px; height: 40px; border-radius: 20px; position: absolute; top: 50%; left: 10px; margin-top: -20px; }
+    .songlist li a h2         { font-size: 16px; line-height: 19px; color: #444; margin: 0 0 0 0; font-weight: bold; }
+    .songlist li a p          { font-size: 13px; line-height: 15px; margin: 0 0 5px 0; font-weight: 600; color: #aaa; }
+    .songlist li a h2,
+    .songlist li a p          { margin-right: 23px; margin-left: 48px; }
+
+
