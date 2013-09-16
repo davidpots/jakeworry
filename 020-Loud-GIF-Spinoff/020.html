@@ -12,18 +12,19 @@
 
   <!-- Content ============================================================ -->
 
-    <iframe id="player" frameborder="0" allowfullscreen="1" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/fP1yWejdqfU?autoplay=1&amp;controls=0&amp;modestbranding=1&amp;playlist=s7L2PVdrb_8&amp;showinfo=0&amp;start=0&amp;loop=1&amp;enablejsapi=1"></iframe>
+    <iframe id="player" type="text/html" width="640" height="390" frameborder="0" allowfullscreen="1" src="http://www.youtube.com/embed/fP1yWejdqfU?enablejsapi=1&controls=0&modestbranding=1&autoplay=1&start=0&origin=http://localhost:8000.com"></iframe>
 
     <div id="wrapper">
       <div id="gif" style="background-image: url(http://media.giphy.com/media/AO2a9UomVv7cA/200.gif);"></div>
       <div id="chyron">
         <h1>Exercise your <a href="http://www.youtube.com/watch?v=2LvMaPHmMw4" class="yt-link">sense</a> of <a href="http://www.youtube.com/watch?v=rXgBsONgbGs" class="yt-link">geography</a>.</h1>
+        <form action="" method="get" id="newParade-form" name="newParade" class="">
+          title: <input type="text" id="" name="paradeTitle"><br />
+          image url: <input type="text" id="" name="paradeGifUrl"><br />
+          <input type="submit" id="submit" value="summon" class="button">
+        </form>
       </div>
     </div> <!-- end: #wrapper -->
-
-  <!-- Template ========================================================= -->
-
-
 
   <!-- Javascript ========================================================= -->
 
