@@ -51,55 +51,64 @@
 
 // Turn Params into vars
 
-      var combined;
+      var defaultTitle = "Here comes the gif parade!";
+      var defaultYoutubeUrl = "http://www.youtube.com/watch?v=EIyixC9NsLI";
+      var defaultGif1 = "http://media.giphy.com/media/4sLyMfds3Z5e0/giphy.gif";
+      var defaultGif2 = "http://media.giphy.com/media/w00mjqFLNiec/giphy.gif";
+      var defaultGif3 = "http://media.giphy.com/media/jmeLRR5J3ovJe/giphy.gif";
 
-      if (urlVars.paradeTitle != undefined) {
-        var str = tidyParams(urlVars.paradeTitle);
-        $('#chyron h1').text(str);
-        combined = str;
+      // Setup Title
+      if (urlVars.paradeTitle == undefined) {
+        urlVars.paradeTitle = defaultTitle;
       }
+      var str = tidyParams(urlVars.paradeTitle);
+      $('#chyron h1').text(str);
 
-      if (urlVars.paradeGifUrl != undefined) {
-        var strUrl = urlVars.paradeGifUrl;
-        var strCss = "background-image: url("+strUrl+")";
-        $('#gif').attr('style',strCss);
-        combined += urlVars.paradeGifUrl;
+      // Setup YouTube video
+      if (urlVars.paradeYoutubeUrl == undefined) {
+        urlVars.paradeYoutubeUrl = defaultYoutubeUrl;
       }
+      var str = urlVars.paradeYoutubeUrl;
+      str = getYouTubeCode(str);
+      str = makeEmbeddable(str);
+      str = "https:" + str + "?enablejsapi=1&controls=0&modestbranding=1&autoplay=1&start=0&origin="+location.hostname;
+      $('#player').attr('src',str)
 
-      if (urlVars.paradeYoutubeUrl != undefined) {
-        var str = urlVars.paradeYoutubeUrl;
-        str = getYouTubeCode(str);
-        str = makeEmbeddable(str);
-        str = "https:" + str + "?enablejsapi=1&controls=0&modestbranding=1&autoplay=1&start=0&origin="+location.hostname;
-        $('#player').attr('src',str)
-        combined += urlVars.paradeYoutubeUrl;
+      // Setup the Gifs
+      if (urlVars.gif1 == undefined) {
+        urlVars.gif1 = defaultGif1;
       }
-
-      var gifArr = urlVars.secret.split(',');
+      if (urlVars.gif2 == undefined) {
+        urlVars.gif2 = defaultGif2;
+      }
+      if (urlVars.gif3 == undefined) {
+        urlVars.gif3 = defaultGif3;
+      }
+      if (urlVars.secret == undefined) {
+        urlVars.secret = defaultGif1+","+defaultGif2+","+defaultGif3;
+      }
 
 // Repopulate the text inputs with existing values on each load
 
       $('input[name="paradeTitle"]').attr('value',tidyParams(urlVars.paradeTitle));
-      $('input[name="paradeGifUrl"]').attr('value',urlVars.paradeGifUrl);
       $('input[name="paradeYoutubeUrl"]').attr('value',urlVars.paradeYoutubeUrl);
       $('input[name="gif1"]').attr('value',urlVars.gif1);
       $('input[name="gif2"]').attr('value',urlVars.gif2);
       $('input[name="gif3"]').attr('value',urlVars.gif3);
 
-// Infinite Recursion
+// Loop through the gifs!
       
-      // Cycle through background-color of #belowfold
-      // via http://stackoverflow.com/a/6051567 -- but get rid of the animate part (which needs jQuery UI)
-
-      var arr = ["#000", "#111", "#222", "#111"];
-      (function recurse(counter) {
-          var color = arr[counter];
-          $('#belowfold').css('backgroundColor',color);
-          delete arr[counter];
-          arr.push(color);
+      // based on http://stackoverflow.com/a/6051567, minus the jQuery UI stuff
+      var gifArr = urlVars.secret.split(',');
+      (function imgCycle(counter) {
+          var bgImg = gifArr[counter];
+          var bgCss = "background-image: url("+bgImg+")";
+          $('#gif').attr('style',bgCss);
+          delete gifArr[counter];
+          gifArr.push(bgImg);
           setTimeout(function() {
-              recurse(counter + 1);
-          }, 400);
+              imgCycle(counter + 1);
+          }, 1242);
       })(0);
 
 // String multiple form fields together
