@@ -10,17 +10,6 @@
         return "//www.youtube.com/embed/"+code;
       }
 
-// Prototype: if user clicks on YouTube link, change the background video
-
-      $('.yt-link').click(function(){ 
-        var str = $(this).attr('href');
-        str = getYouTubeCode(str);
-        str = makeEmbeddable(str);
-        str = "https:" + str + "?enablejsapi=1&controls=0&modestbranding=1&autoplay=1&start=0&origin="+location.hostname;
-        $('#player').attr('src',str)
-        return false;
-      });
-
 // Read URL params
 
       // v1
@@ -50,18 +39,81 @@
         return decodeURIComponent((str+'').replace(/\+/g, '%20'));
       }
 
+      // v4
+      // written by me, quite newbish but works for prototype... need to understand the ins+outs better
+      function tidyParams(str) {
+        // str = str.replace('%2C',',');
+        // str = str.replace('%20',' ');
+        str = str.replace(/\+/g,' ');
+        return str;
+      }
+
 
 // Turn Params into vars
 
+      var combined;
+
       if (urlVars.paradeTitle != undefined) {
-        var str = presto(urlVars.paradeTitle);
+        var str = tidyParams(urlVars.paradeTitle);
         $('#chyron h1').text(str);
-        $('input[name="paradeTitle"]').attr('value',str);
+        combined = str;
       }
 
       if (urlVars.paradeGifUrl != undefined) {
-        var strUrl = presto(urlVars.paradeGifUrl);
+        var strUrl = urlVars.paradeGifUrl;
         var strCss = "background-image: url("+strUrl+")";
         $('#gif').attr('style',strCss);
-        $('input[name="paradeGifUrl"]').attr('value',strUrl);
+        combined += urlVars.paradeGifUrl;
+      }
+
+      if (urlVars.paradeYoutubeUrl != undefined) {
+        var str = urlVars.paradeYoutubeUrl;
+        str = getYouTubeCode(str);
+        str = makeEmbeddable(str);
+        str = "https:" + str + "?enablejsapi=1&controls=0&modestbranding=1&autoplay=1&start=0&origin="+location.hostname;
+        $('#player').attr('src',str)
+        combined += urlVars.paradeYoutubeUrl;
+      }
+
+      var gifArr = urlVars.secret.split(',');
+
+// Repopulate the text inputs with existing values on each load
+
+      $('input[name="paradeTitle"]').attr('value',tidyParams(urlVars.paradeTitle));
+      $('input[name="paradeGifUrl"]').attr('value',urlVars.paradeGifUrl);
+      $('input[name="paradeYoutubeUrl"]').attr('value',urlVars.paradeYoutubeUrl);
+      $('input[name="gif1"]').attr('value',urlVars.gif1);
+      $('input[name="gif2"]').attr('value',urlVars.gif2);
+      $('input[name="gif3"]').attr('value',urlVars.gif3);
+
+// Infinite Recursion
+      
+      // Cycle through background-color of #belowfold
+      // via http://stackoverflow.com/a/6051567 -- but get rid of the animate part (which needs jQuery UI)
+
+      var arr = ["#000", "#111", "#222", "#111"];
+      (function recurse(counter) {
+          var color = arr[counter];
+          $('#belowfold').css('backgroundColor',color);
+          delete arr[counter];
+          arr.push(color);
+          setTimeout(function() {
+              recurse(counter + 1);
+          }, 400);
+      })(0);
+
+// String multiple form fields together
+
+      // via http://stackoverflow.com/a/13830609
+      function check(){
+          $('#newParade-form input.combine').each(function(id,elem){
+              b = $("#hiddenField").val();
+              if(b.length > 0){
+                  $("#hiddenField").val( b + ',' + $(this).val() );
+              } else {
+                  $("#hiddenField").val( $(this).val() );
+              }
+          });
+          $("#newParade-form").submit();
+          return false;
       }
