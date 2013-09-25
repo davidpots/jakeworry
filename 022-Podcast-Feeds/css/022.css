@@ -1,0 +1,20 @@
+/* -- SETUP -- */
+
+    * {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333;
+      padding: 32px;
+    }
+
+/* -- GENERAL -- */
