@@ -5,7 +5,7 @@ This is a repository of front-end development tidbits and explorations. Each pro
 Here are a few "finished" projects I created after sharpening my skillset on these exercises:
 
 - <a href="http://davidpots.com/gifparade">GIF Parade</a> (combine multiple GIFs + Youtube music) from September 19, 2013
-- <a href="http://davidpots.com/jakeworry/019-JSON-Songnotes-Mobile/019.html">Songnotes mobile</a> (mobile-friendly catalog listing) from September 13, 2013
+- <a href="http://davidpots.com/jakeworry/019-JSON-Songnotes-Mobile/019.html">Songnotes mobile</a> (mobile-friendly catalog listing via JSON) from September 13, 2013
 - <a href="http://davidpots.com/fireflygrove/">Firefly Grove</a> (SoundCloud API + jQuery layout) from August 21, 2013
 
 ---
