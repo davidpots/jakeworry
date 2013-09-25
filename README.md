@@ -4,6 +4,21 @@ A cleverly named repo for me to keep track of random jQuery tidbits + exploratio
 
 ---
 
+#### 023: Feedzirra Intro
+Where I check out using the Feedzirra ruby gem to parse feeds. This mainly follows along with the tutorial that RailsCasts did on the topic: http://railscasts.com/episodes/168-feed-parsing?view=asciicast
+
+#### 022: Javascript parsing of external XML Feeds
+In which I explore the possibilities, and impossibilities, of parsing external XML feeds with Javascript alone. Tried a lot of techniques -- but many challenges (cross origin resource sharing), and possible hacky solutions -- but probably going to try Ruby solutions instead (next project).
+
+#### 021: URL Encoding
+Explores how I might use URL encoding to compress super long URLs for GIF Parade. Ultimately, this won't work for what I need – but I still learned some cool stuff here.
+
+#### 020: LoudGIF Spinoff
+Explores how I might hack the LoudGIF concept to work for many GIFs. I forked this into its own project (GIF Parade): http://davidpots.com/gifparade and http://github.com/davidpots/gifparade
+
+#### 019: Songnotes Mobile
+The culmination of 010 through 018 -- where I take a JSON feed of the latest Songnotes song listing and display it in a mobile-friendly manner.
+
 #### 018: JSON Grouping, part 4
 In progress. Refines 017 to be much more elegant, using less repeated code. Not complete yet.
 
