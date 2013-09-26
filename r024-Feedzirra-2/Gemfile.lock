@@ -44,6 +44,9 @@ GEM
       loofah (~> 1.2.1)
       nokogiri (~> 1.5.3)
       sax-machine (~> 0.2.0.rc1)
+    feedzirra-podcast (0.0.9)
+      feedzirra
+      periodic (~> 1.2.2)
     gorillib (0.1.11)
       json
     hike (1.2.3)
@@ -64,6 +67,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.0)
     nokogiri (1.5.10)
+    periodic (1.2.2)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -124,6 +128,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   feedzirra (~> 0.2.0.rc2)
+  feedzirra-podcast (~> 0.0.9)
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)

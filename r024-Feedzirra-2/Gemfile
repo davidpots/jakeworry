@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 gem 'feedzirra', "~> 0.2.0.rc2"
+gem "feedzirra-podcast", "~> 0.0.9"
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
