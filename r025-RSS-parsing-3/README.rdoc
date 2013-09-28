@@ -1,28 +1,79 @@
-== README
+To make the magic happen with this exercise, you need to go to console and paste this:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+    @feeds = [  "http://feeds.99percentinvisible.org/99percentinvisible",
+                "http://atp.fm/episodes?format=rss",
+                "http://feeds.5by5.tv/amplified",
+                "http://www.binnallofamerica.com/podcast.xml",
+                "http://baldmove.com/feed/breaking-good-breaking-bad-podcast/",
+                "http://batgap.com/feed/podcast",
+                "http://feeds.feedburner.com/dancarlin/commonsense?format=xml",
+                "http://feeds.feedburner.com/CreativeBriefs",
+                "http://feeds.feedburner.com/dancarlin/history?format=xml",
+                "http://feeds.feedburner.com/debugshow",
+                "http://feeds.muleradio.net/decodedc",
+                "http://developingperspective.com/feed/podcast/",
+                "http://feeds.feedburner.com/ExecutePodcast",
+                "http://expandingmind.podbean.com/feed/",
+                "http://revision3.com/foundation/feed/mp4-hd30",
+                "http://feeds.feedburner.com/freakonomicsradio",
+                "http://sports.espn.go.com/espnradio/podcast/feeds/itunes/podCast?id=9179868",
+                "http://hiddenexperience.podbean.com/feed/",
+                "http://feeds.5by5.tv/inbeta",
+                "http://jimharold.com/?feed=jimharoldscampfire",
+                "http://feeds.muleradio.net/mistakes",
+                "http://www.londonreal.tv/feed/podcast/",
+                "http://feeds.twit.tv/mbw",
+                "http://midwestreal.libsyn.com/rss",
+                "http://mysteriousuniverse.org/feed/podcast",
+                "http://feeds.feedburner.com/soundcloud/JEcj",
+                "http://feed.nashownotes.com/rss.xml",
+                "http://www.npr.org/rss/podcast.php?id=510019",
+                "http://www.npr.org/rss/podcast.php?id=13",
+                "http://www.occultofpersonality.net/podcast",
+                "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2406595",
+                "http://feeds.5by5.tv/quit",
+                "http://feeds.feedburner.com/RadioMisterioso",
+                "http://shoptalkshow.com/feed/podcast/",
+                "http://www.skeptiko.com/feed/",
+                "http://feeds.feedburner.com/filmcast",
+                "http://www.castmate.fm/feed.php?u=drchrisryanpodcast",
+                "http://theadamcarollashow.libsyn.com/rss",
+                "http://feeds.feedburner.com/TheBryanCallenShow",
+                "http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2864045",
+                "http://www.spreaker.com/show/635488/episodes/feed",
+                "http://feeds.5by5.tv/criticalpath",
+                "http://davidseaman.libsyn.com/rss",
+                "http://disinfo.libsyn.com/rss",
+                "http://feeds.feedburner.com/TheDrunkenTaoistPodcast",
+                "http://lavenderhour.libsyn.com/rss",
+                "http://theeastwing.net/feed/podcast",
+                "http://feeds.feedburner.com/TheGentlyMad",
+                "http://thehighersidechats.com/feed/podcast/",
+                "http://feeds.feedburner.com/theindustryradio",
+                "http://joeroganexp.joerogan.libsynpro.com/rss",
+                "http://thelabyrinth.libsyn.com/rss",
+                "http://feeds.newdisrupt.org/nd",
+                "http://feeds.feedburner.com/nbsp-new",
+                "http://feeds.feedburner.com/theoneswhoknock",
+                "http://feeds.muleradio.net/thetalkshow",
+                "http://warriorpoet.podomatic.com/rss2.xml",
+                "http://feeds.thisamericanlife.org/talpodcast",
+                "http://leo.am/podcasts/twig",
+                "http://leo.am/podcasts/twit",
+                "http://leo.am/podcasts/tri",
+                "http://www.uie.com/brainsparks/feed/",
+                "http://feeds.feedburner.com/buzzsprout/uJEz",
+                "http://nightvale.libsyn.com/rss",
+                "http://wtfpod.libsyn.com/rss",
+                "http://feeds.feedburner.com/younggunsshow",
+                "http://feeds.feedburner.com/twist-audio" ]
 
-Things you may want to cover:
+And then do this:
 
-* Ruby version
+    Podcast.add_many(@feeds)
 
-* System dependencies
+And then load the homepage (`localhost:3000`) and they all should appear.
 
-* Configuration
+# To fix, sort of...
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+It is bizarre, but when certain feeds are present (in the list above) the add_many process breaks. For example, add the Radiolab feed direclty above the ShopTalk feed, and it breaks. Or add Radiolab at the very end, and it breaks -- but not at the very end. I think there is some feed validation / formatting issues that can occurr when certain types of feeds are along side other types of feeds? That seems like it shouldn't ever happen, but it does -- maybe. Will look into other ways to parse feeds next.
