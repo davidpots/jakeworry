@@ -11,3 +11,22 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+  font-family: "Helvetica Neue", Arial;
+  font-size: 14px;
+  line-height: 18px;
+  color: #555;
+  font-weight: 300;
+}
+
+.feed { overflow: hidden; width: auto; border-top: 1px solid #eee; padding: 15px 0 10px 0; }
+.feed img { background: #eee; float: left; }
+
+.feed h2  { font-size: 18px; line-height: 21px; margin: 0 0 6px 0; color: #333; }
+.feed p   { margin: 0 0 6px 0; }
+.feed ul  { margin: 0 0 6px 0; }
+
+.feed h2,
+.feed p   { margin-left: 73px; }
+.feed ul  { margin-left: 50px; }

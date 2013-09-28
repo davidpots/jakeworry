@@ -1,1 +1,15 @@
-The thing is: <%= @fox %>
+<h1>Hello</h1>
+
+<% @podcasts.each do |podcast| %>
+
+  <div class="feed">
+    <img src="<%= podcast.image %>" width="60" height="60" />
+    <h2><%= podcast.name %></h2>
+    <p><%= podcast.description %></p>
+    <ul>
+      <li><a href="<%= podcast.url_web %>">Website</a></li>
+      <li><a href="<%= podcast.url_rss %>">RSS Feed</a></li>
+    </ul>
+  </div> <!-- end: .feed -->
+
+<% end %>

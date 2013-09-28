@@ -1,30 +1,54 @@
 class Podcast < ActiveRecord::Base
 
-  def self.add_one(feed)
+  def self.add_feeds(urls)
 
-    # read the feed
-    rss = SimpleRSS.parse open(feed)
-    rss = SimpleRSS.parse open("http://joeroganexp.joerogan.libsynpro.com/rss")
-    
+    @failed_feeds = []
 
-    # Set value of each feed item
-    @name = rss.channel.title
-    @url_web = rss.channel.link
-    @url_rss = feed
-    # if rss.channel.image #&& result.channel.image.url
-    #   @url_img = rss.channel.image.url
-    # else
-    #   @url_img = ""
-    # end
-    @description = rss.channel.description
+    # Loop through each feed...
+    urls.each do |feed_url|
 
-    # put it into the DB
-    create!(
-      :name          => @name,
-      :description   => @description,
-      :url_web       => @url_web,
-      :url_rss       => @url_rss
-    )
+      @legit = true
+
+      success = lambda do |url, feed|
+        puts "SUCCESS - #{feed.title} - #{url}"
+        @legit == true
+      end
+
+
+      failure = lambda do |url, response_code, header, body|
+        @failed_feeds << url if response_code == 200
+        puts "*********** FAILED with #{response_code} on #{url}"
+        @legit == false
+      end
+
+      if @legit == true
+
+        # Parse the feed with Feedzirra
+        @feed = Feedzirra::Feed.fetch_and_parse(feed_url, :on_success => success, :on_failure => failure)
+
+        # Set value of each feed item
+        @name    = @feed.title
+        @url_web = @feed.url
+        @url_rss = @feed.feed_url
+        if @feed.itunes_image.nil?
+          @image = @feed.image.gsub("\t","").gsub("\n","").gsub(" ","")
+        else
+          @image = @feed.itunes_image
+        end
+        @description = @feed.description
+
+        # put it into the DB
+        create!(
+          :name          => @name,
+          :description   => @description,
+          :image         => @image,
+          :url_web       => @url_web,
+          :url_rss       => @url_rss
+        )
+
+      end 
+
+    end
 
   end
 

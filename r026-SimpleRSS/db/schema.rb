@@ -11,13 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130928051946) do
+ActiveRecord::Schema.define(version: 20130928123258) do
 
   create_table "podcasts", force: true do |t|
     t.string   "name"
     t.text     "description"
     t.string   "url_web"
     t.string   "url_rss"
+    t.string   "url_itunes"
     t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
