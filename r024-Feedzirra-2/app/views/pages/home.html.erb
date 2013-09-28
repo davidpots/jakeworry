@@ -1,7 +1,20 @@
 <h1>024 Home</h1>
 
-<%= @feed %> 
+<%#= @feed %> 
 
-<hr />
 
-<%= @doc %>
+<% @feeds.each do |feed| %>
+
+  <% parse_feed(feed) %>
+  
+  <div class="feed">
+    <img src="<%= @url_img %>" width="60" height="60" />
+    <h2><%= @title %></h2>
+    <p><%= @description %></p>
+    <ul>
+      <li><a href="<%= @url_web %>">Website</a></li>
+      <li><a href="<%= @url_rss %>">RSS Feed</a></li>
+    </ul>
+  </div> <!-- end: .feed -->
+  
+<% end %>
