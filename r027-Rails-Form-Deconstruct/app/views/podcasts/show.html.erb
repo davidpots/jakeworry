@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @podcast.title %>
+</p>
+
+<p>
+  <strong>Url itunes:</strong>
+  <%= @podcast.url_itunes %>
+</p>
+
+<p>
+  <strong>Url web:</strong>
+  <%= @podcast.url_web %>
+</p>
+
+<p>
+  <strong>Url rss:</strong>
+  <%= @podcast.url_rss %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @podcast.description %>
+</p>
+
+<%= link_to 'Edit', edit_podcast_path(@podcast) %> |
+<%= link_to 'Back', podcasts_path %>
