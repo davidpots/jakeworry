@@ -20,6 +20,8 @@ body {
   font-weight: 300;
 }
 
+.wrapper { width: 640px; margin: 0 auto; }
+
 .feed { overflow: hidden; width: auto; border-top: 1px solid #eee; padding: 15px 0 10px 0; }
 .feed img { background: #eee; float: left; }
 

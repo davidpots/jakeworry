@@ -1,4 +1,4 @@
-<h1>Listing podcasts</h1>
+<div class="wrapper">
 
   <% @podcasts.each.with_index do |podcast,index| %>
 
@@ -17,7 +17,8 @@
     <%#= link_to 'Edit', edit_podcast_path(podcast) %>
     <%#= link_to 'Delete', podcast, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-    <% end %>
+  <% end %>
 
+  <%#= link_to 'New Podcast', new_podcast_path %>
 
-<%= link_to 'New Podcast', new_podcast_path %>
+</div> <!-- end: .wrapper -->
