@@ -30,5 +30,14 @@
   <%= @podcast.image %>
 </p>
 
+<h2>Latest entries:</h2>
+<% @entries.each do |entry| %>
+  <p>
+    <strong><%= entry.title %></strong><br />
+    <%= (entry.summary).html_safe %><br />
+  </p>
+<% end %>
+
+
 <%= link_to 'Edit', edit_podcast_path(@podcast) %> |
 <%= link_to 'Back', podcasts_path %>

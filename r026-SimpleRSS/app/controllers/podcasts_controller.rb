@@ -10,6 +10,8 @@ class PodcastsController < ApplicationController
   # GET /podcasts/1
   # GET /podcasts/1.json
   def show
+    @podcast = Podcast.find(params[:id])
+    @entries = Podcast.get_entries(@podcast.url_rss)
   end
 
   # GET /podcasts/new
