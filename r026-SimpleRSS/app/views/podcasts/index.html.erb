@@ -4,7 +4,7 @@
 
     <div class="feed">
       <img src="<%= podcast.image %>" width="60" height="60" />
-      <h2><%= podcast.name %> <%= link_to 'Edit', edit_podcast_path(podcast), :style => "font-size: 12px; font-weight: normal; color: #999; text-decoration: none;" %></h2>
+      <h2><a href="<%= podcast_path(podcast) %>"><%= podcast.name %></a> <%= link_to 'Edit', edit_podcast_path(podcast), :style => "font-size: 12px; font-weight: normal; color: #999; text-decoration: none;" %></h2>
       <p><%= podcast.description %></p>
       <p>
         <% unless podcast.url_web.blank? %><a href="<%= podcast.url_web %>">Website</a><% end %>
