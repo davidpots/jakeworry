@@ -3,19 +3,12 @@
   <% @podcasts.each.with_index do |podcast,index| %>
 
     <div class="feed">
-      <img src="<%= podcast.image %>" width="60" height="60" />
-      <h2><a href="<%= podcast_path(podcast) %>"><%= podcast.name %></a> <%= link_to 'Edit', edit_podcast_path(podcast), :style => "font-size: 12px; font-weight: normal; color: #999; text-decoration: none;" %></h2>
-      <p><%= podcast.description %></p>
-      <p>
-        <% unless podcast.url_web.blank? %><a href="<%= podcast.url_web %>">Website</a><% end %>
-        <% unless podcast.url_rss.blank? %><a href="<%= podcast.url_rss %>">RSS</a><% end %>
-        <% unless podcast.url_itunes.blank? %><a href="<%= podcast.url_itunes %>">iTunes</a><% end %>
-      </p>
+      <a href="<%= podcast_path(podcast) %>">
+        <img src="<%= podcast.image %>" width="90" height="90" />
+        <h2><%= podcast.name %></h2>
+        <p><%= podcast.description %></p>
+      </a>
     </div> <!-- end: .feed -->
-
-    <%#= link_to 'Show', podcast %>
-    <%#= link_to 'Edit', edit_podcast_path(podcast) %>
-    <%#= link_to 'Delete', podcast, method: :delete, data: { confirm: 'Are you sure?' } %>
 
   <% end %>
 

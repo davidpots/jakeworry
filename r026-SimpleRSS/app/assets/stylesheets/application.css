@@ -13,24 +13,31 @@
  */
 
 body {
-  font-family: "Helvetica Neue", Arial;
-  font-size: 14px;
-  line-height: 18px;
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
   color: #555;
   font-weight: 300;
+  background: #3a3a3a;
 }
 
+.wrapper   { padding: 20px; background: #fff; }
 @media all and (min-width: 640px) {
   .wrapper { width: 640px; margin: 0 auto; }
 }
 
-.feed { overflow: hidden; width: auto; border-top: 1px solid #eee; padding: 15px 0 10px 0; }
-.feed img { background: #eee; float: left; }
+*         { position: relative; margin: 0; padding: 0; }
+
+a         { text-decoration: none; }
+
+.feed         { }
+.feed a       { display: block; border-top: 1px solid #eee; padding: 25px 0 20px 0; min-height: 100px; }
+.feed a h2    { font-size: 24px; }
+.feed img     { background: #eee; position: absolute; left: 0; top: 20px; box-shadow: 0px 0px 1px rgba(0,0,0,0.2);}
 
 .feed h2  { font-size: 18px; line-height: 21px; margin: 0 0 6px 0; color: #333; }
 .feed p   { margin: 0 0 6px 0; }
 .feed ul  { margin: 0 0 6px 0; }
 
 .feed h2,
-.feed p   { margin-left: 73px; }
-.feed ul  { margin-left: 50px; }
+.feed p   { margin-left: 105px; }
