@@ -8,6 +8,7 @@ Here are a few "finished" projects I created after sharpening my skillset on the
 - <a href="http://davidpots.com/jakeworry/019-JSON-Songnotes-Mobile/019.html">Songnotes mobile</a> (mobile-friendly catalog listing via JSON) from September 13, 2013
 - <a href="http://davidpots.com/fireflygrove/">Firefly Grove</a> (SoundCloud API + jQuery layout) from August 21, 2013
 
+
 ---
 
 #### 023: Feedzirra Intro
