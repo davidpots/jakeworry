@@ -33,6 +33,7 @@ var villains = [  "The Joker",
 function getRandomName(arr) {
   var randomIndex = Math.floor(Math.random() * arr.length);
   var randomName = arr[randomIndex];
+  arr.splice(randomIndex, 1); // removes the random selection so it doesn't show up again
   return randomName;  
 }
 
