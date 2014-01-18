@@ -55,4 +55,4 @@
         .dot-full  .svg-dot { fill: #27a9e1; }
         .dot-empty .svg-dot { fill: transparent; }
 
-        .fretboard { background-image: url(../svg/fretboard.svg); width: 416px; height: 480px; background-color: #fff; }
+        .fretboard { background-image: url(../svg/fretboard.svg); width: 416px; height: 480px; background-color: #fff; } 
