@@ -15,9 +15,17 @@
           font-size: 16px;
           line-height: 1.4; }
 
+        img {
+          max-width: 100%;
+          height: auto;
+          border: 0;
+          display: block;
+        }
+
 /* -- GENERAL TYPOGRAPHY -- */
 
-        a  { color: #0089ef; }
+        a  { color: #0089ef; text-decoration: none; }
+        a:hover { text-decoration: none; }
 
         h1,h2,h3,h4,h5,h6 { color: #444; margin: 28px 0 20px 0; }
 
@@ -46,4 +54,41 @@
 
 /* Layout */
 
-.content { max-width: 800px; margin: 0 auto; }
+.content { max-width: 940px; margin: 0 auto; }
+
+
+
+
+
+
+
+
+
+
+
+    .tiles        { margin-left: -20px; margin-bottom: 48px; overflow: hidden; width: auto; margin-top: 20px; }
+    .tiles .tile  { background: #fff; border: 1px solid #ccc; border-bottom-width: 3px; border-radius: 4px; float: left; margin: 0 0 20px 20px; }
+    
+        /*// Tile Widths*/
+        .tile.tile-half { width: 460px; }
+        .tile.tile-third { width: 300px; }
+        .tile.tile-fourth { width: 220px; }
+
+        /*// Tile Heights*/
+        .tile.tile-half .deal-details { min-height: 145px; }
+        .tile.tile-third .deal-details { min-height: 150px; }
+        .tile.tile-fourth .deal-details { min-height: 165px; }
+    
+        /*// For tiles on a dark, non-white background*/
+        .tiles.onDarkBg .tile { border: none; box-shadow: 0px 2px 0px rgba(0,0,0,0.2); }
+
+
+      .tile.t1 .deal-image .image { height: 223px; }
+      .tile.t1 .deal-image .flag { background: rgba(0,136,204,0.75); position: absolute; bottom: 0; left: 0; right: 0; color: #fff; font-family: georgia; font-style: italic; font-size: 16px; padding: 10px 13px 9px; }
+      .deal-details { padding: 10px 13px; min-height: 146px; }
+      .deal-details h2.primary { color: #08c; font-size: 18px; line-height: 22px; margin: 0 0 7px 0; }
+      .deal-details p.secondary { color: #262626; font-size: 14px; line-height: 18px; margin: 0 0 7px 0; }
+      .deal-details p.dates { color: #F0812A; margin: 0 0 7px 0; padding: 0 0 0 18px; background: url(../images/icons/tile-calendar.png) no-repeat left center;}
+      .deal-details p.location { color: #888; font-size: 11px; line-height: 18px; text-transform: uppercase; position: absolute; bottom: 10px; left: 13px; margin: 0; padding: 0 0 0 18px; background: url(../images/icons/tile-pin.png) no-repeat left center; }
+      .deal-details p.price { color: #F0812A; font-size: 30px; line-height: 34px; font-family: "Arial Rounded MT Bold"; text-align: right; position: absolute; bottom: 10px; right: 13px; margin: 0; }
+      .deal-details p.price sup { font-size: 18px; }
