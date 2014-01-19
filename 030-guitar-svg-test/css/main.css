@@ -15,6 +15,17 @@
           font-size: 16px;
           line-height: 1.4; }
 
+        /* via http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/ */
+        @viewport{
+            zoom: 1.0;
+            width: extend-to-zoom;
+        }
+        
+        @-ms-viewport{
+            width: extend-to-zoom;
+            zoom: 1.0;
+        }
+
 /* -- GENERAL TYPOGRAPHY -- */
 
         a  { color: #0089ef; }
@@ -46,13 +57,41 @@
 
 /* -- LAYOUT -- */
 
-        .content { max-width: 940px; margin: 0 auto; }
+        .content { max-width: 940px; margin: 0 auto; padding: 20px; }
 
 /* -- */
 
         body { background: #eee; }
-        .dot { width: 52px; height: 80px; display: block; float: left; }
+        .dot { 
+          width: 12.5%;
+          height: 16.6666667%;
+/*          width: 52px;
+          height: 80px;*/
+          display: block;
+          float: left; 
+        }
         .dot-full  .svg-dot { fill: #27a9e1; }
         .dot-empty .svg-dot { fill: transparent; }
 
-        .fretboard { background-image: url(../svg/fretboard.svg); width: 416px; height: 480px; background-color: #fff; } 
+        .fretboard { width: 416px; height: 480px; background-color: #fff; } 
+        #fretboard svg.fretBG { position: absolute; width: 100%; background: red; }
+
+        #container {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            width: 200px;
+            max-width: 400px;
+        }
+        #dummy {
+            padding-top: 115.38461538%;
+        }
+        #fretboard {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #fff url(../svg/fretboard.svg) no-repeat;
+            background-size: cover;
+        }

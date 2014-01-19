@@ -2,36 +2,45 @@
 <html>
   <head>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
-    <style type="text/css">
-      /* quick styles go here */
-    </style>
 
     <!-- Javascript -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="javascript/fretboardSVG.js"></script>
     <script src="javascript/main.js"></script>
 
   </head>
   <body>
-  
+
     <div class="section">
       <div class="content">
 
-
-            <!-- Replace Test -->
+        <!-- Replace Test -->
 <h1>Source Text:</h1>
-<pre class="replaceMe">        
- |||||| 
- o||o|o 
+<pre class="replaceMe">
+  x ^   
  ||||o| 
+ ||o||| 
+ o||||o 
  |||||| 
         
 </pre>
 
-            <!-- Fretboard -->
-            <h1>Resulting SVG Fretboard:</h1>
-            <div class="fretboard"></div>
+        <!-- Fretboard -->
+        <h1>Resulting SVG Fretboard:</h1>
+        <div id="container">
+          <div id="dummy"></div>
+          <div id="fretboard"></div>
+        </div>
+
+<p>I am a bunch of shit below the content, to take up space and let you scroll.</p>
+<br /><br /><br /><br /><br /><br /><br /><br />
+<p>boo!</p>
+
+
 
 
       </div> <!-- end: .content -->
