@@ -65,26 +65,22 @@
         .dot { 
           width: 12.5%;
           height: 16.6666667%;
-/*          width: 52px;
-          height: 80px;*/
           display: block;
           float: left; 
         }
         .dot-full  .svg-dot { fill: #27a9e1; }
         .dot-empty .svg-dot { fill: transparent; }
 
-        .fretboard { width: 416px; height: 480px; background-color: #fff; } 
-        #fretboard svg.fretBG { position: absolute; width: 100%; background: red; }
-
         #container {
             display: inline-block;
             position: relative;
             width: 100%;
-            width: 200px;
             max-width: 400px;
+            background: #fff;
+            border-top: 20px solid #fff;
         }
         #dummy {
-            padding-top: 115.38461538%;
+            padding-top: 115.38461538%; /* result of 30/26, via http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
         }
         #fretboard {
             position: absolute;
@@ -92,6 +88,6 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: #fff url(../svg/fretboard.svg) no-repeat;
+            background: url(../svg/fretboard.svg) no-repeat;
             background-size: cover;
         }
