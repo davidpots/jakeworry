@@ -62,14 +62,8 @@
 /* -- */
 
         body { background: #eee; }
-        .dot { 
-          width: 12.5%;
-          height: 16.6666667%;
-          display: block;
-          float: left; 
-        }
-        .dot-full  .svg-dot { fill: #27a9e1; }
-        .dot-empty .svg-dot { fill: transparent; }
+
+/* Fretboard Container/Wrapper */
 
         #container {
             display: inline-block;
@@ -91,3 +85,14 @@
             background: url(../svg/fretboard.svg) no-repeat;
             background-size: cover;
         }
+
+/* Fretboard Content */
+
+        .dot { 
+          width: 12.5%;
+          height: 16.6666667%;
+          display: block;
+          float: left; 
+        }
+        .dot-full  .svg-dot { fill: #27a9e1; }
+        .dot-empty .svg-dot { fill: transparent; }
