@@ -1,31 +1,41 @@
+var fretboardHTML = '<div class="fretboard-wrapper">\
+            <div class="fretboard-pillars"></div>\
+            <div class="fretboard"></div>\
+          </div>';
+
+var thisFretboard;
 
 $(document).ready(function(){
 
-  // Read ASCII fretboard text & prep it
+  // For each Fretboard instance...
+  $.each( $('.fretboard_instance'), function(i,el) {
 
-          // Read the ASCII fretboard that'll be replaced
-          var toReplace = $('.replaceMe').html();
-          // Split the ASCII freboard text into an array of individual characters
-          toReplace = toReplace.split('');
+    // Insert the HTML foundation
+    $(this).append(fretboardHTML);
 
-  // Go through ASCII characters, inject HTML+SVG as needed
+    // Read the ASCII fretboard that'll be replaced, then split it into an array of characters
+    var toReplace = $(el).find('.asciiFret').html();
+    toReplace = toReplace.split('');
 
-          var replacement = "";
-          $.each( toReplace, function(i,el) {
-            if (el == "o") {
-              replacement += "<div class='dot dot-full'>"+dot+"</div>";
-            } else if (el == "^") {
-              replacement += "<div class='dot dot-full'>"+string_o+"</div>";
-            } else if (el == "x") {
-              replacement += "<div class='dot dot-full'>"+string_x+"</div>";
-            } else if ((el == "|") || (el == " ")) {
-              replacement += "<div class='dot dot-empty'></div>";
-            } 
-          });
+    // Go through ASCII characters, inject HTML+SVG as needed
+    var replacement = "";
+    $.each( toReplace, function(i,character) {
+      if (character == "o") {
+        replacement += "<div class='dot dot-full'>"+dot+"</div>";
+      } else if (character == "^") {
+        replacement += "<div class='dot dot-full'>"+string_o+"</div>";
+      } else if (character == "x") {
+        replacement += "<div class='dot dot-full'>"+string_x+"</div>";
+      } else if ((character == "|") || (character == " ")) {
+        replacement += "<div class='dot dot-empty'></div>";
+      } 
+    });
 
-  // Update the page with the new HTML/SVG markup
+    // Update the page with the new HTML/SVG markup
+    $(el).find('.fretboard').append(fretboardBG);
+    $(el).find('.fretboard').append(replacement);
 
-          $('.fretboard').append(fretboardBG);
-          $('.fretboard').append(replacement);
-
+    // Remove the ASCII fretboard
+    $(this).find('.asciiFret').hide();
+  });
 });

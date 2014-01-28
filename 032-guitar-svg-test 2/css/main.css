@@ -57,19 +57,17 @@
 
 /* -- LAYOUT -- */
 
-        .content { max-width: 940px; margin: 0 auto; padding: 20px; }
+        .content { padding: 20px; }
 
-/* -- */
-
-        body { background: #eee; }
 
 /* Fretboard Container/Wrapper */
 
         .fretboard-wrapper {
             display: inline-block;
             position: relative;
-            width: 100%;
-            max-width: 600px;
+            width: 150px;
+            margin: 20px;
+            float: left;
             background: #fff;
         }
         .fretboard-pillars {
