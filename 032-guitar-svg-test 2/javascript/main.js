@@ -21,13 +21,19 @@ $(document).ready(function(){
     var replacement = "";
     $.each( toReplace, function(i,character) {
       if (character == "o") {
-        replacement += "<div class='dot dot-full'>"+dot+"</div>";
+        replacement += "<div class='cell dot'>"+dot+"</div>";
+      } else if (character == "(") {
+        replacement += "<div class='cell'>"+dotWideLeft+"</div>";
+      } else if (character == ")") {
+        replacement += "<div class='cell'>"+dotWideRight+"</div>";
+      } else if (character == "=") {
+        replacement += "<div class='cell'>"+dotWideMiddle+"</div>";
       } else if (character == "^") {
-        replacement += "<div class='dot dot-full'>"+string_o+"</div>";
+        replacement += "<div class='cell'>"+string_o+"</div>";
       } else if (character == "x") {
-        replacement += "<div class='dot dot-full'>"+string_x+"</div>";
+        replacement += "<div class='cell'>"+string_x+"</div>";
       } else if ((character == "|") || (character == " ")) {
-        replacement += "<div class='dot dot-empty'></div>";
+        replacement += "<div class='cell empty'></div>";
       } 
     });
 
