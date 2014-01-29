@@ -38,10 +38,24 @@ $(document).ready(function(){
     });
 
     // Update the page with the new HTML/SVG markup
-    $(el).find('.fretboard').append(fretboardBG);
-    $(el).find('.fretboard').append(replacement);
 
-    // Remove the ASCII fretboard
-    $(this).find('.asciiFret').hide();
+        // Determine what size fretboard to use
+        var fretb_size,fretb_class;    
+        if ( $(this).find('.asciiFret').hasClass('v12') ) {
+          fretb_bg = fretb_vert_12;
+          fretb_class = "v12";
+        } else {
+          fretb_bg = fretb_vert_4;
+          fretb_class = "v4";
+        }
+
+        // Fill the .fretboard with background, content, and a class
+        $(el).find('.fretboard')
+          .append(fretb_bg)
+          .append(replacement)
+          .parent().addClass(fretb_class);
+
+        // Remove the ASCII fretboard
+        $(this).find('.asciiFret').hide();
   });
 });

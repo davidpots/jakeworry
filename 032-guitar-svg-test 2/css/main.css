@@ -57,7 +57,7 @@
 
 /* -- LAYOUT -- */
 
-        .content { padding: 20px; }
+        .content { padding: 20px; background: #eee; }
 
 
 /* Fretboard Container/Wrapper */
@@ -65,13 +65,15 @@
         .fretboard-wrapper {
             display: inline-block;
             position: relative;
-            width: 280px;
-            margin: 20px;
-            float: left;
+            width: 312px; /* 208, 312, 416 (actual), etc -- these all work perfectly. Others can distort heights over time */
+            margin: 4px;
             background: #fff;
         }
-        .fretboard-pillars {
-            padding-top: 115.38461538%; /* result of 30/26, via http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
+        .v4 .fretboard-pillars {
+            padding-top: 115.38461538%; /* result of 30/26 aka 480/416, via http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
+        }
+        .v12 .fretboard-pillars {
+            padding-top: 269.230769230769%; /* result of 35/13 aka 1120/416, via http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
         }
         .fretboard {
             position: absolute;
@@ -99,11 +101,11 @@
 
 /* Fretboard Content */
         .cell {
-          width: 12.5%;
-          height: 16.6666667%;
+          width: 12.5%; 
+          height: 16.666666666666667%;
           display: block;
           float: left; 
         }
+        .v12 .cell { height: 7.142857142%; }
         .cell.dot .fretb_dot { fill: #27a9e1; }
         .cell.empty          { /* no styles needed */ }
- }
