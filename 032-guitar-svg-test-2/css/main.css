@@ -1,0 +1,111 @@
+/* -- SETUP -- */
+
+        * {
+        	margin: 0;
+        	padding: 0;
+        	position: relative;
+        	-webkit-box-sizing: border-box;
+        	   -moz-box-sizing: border-box;
+        	        box-sizing: border-box;
+        }
+
+        body { 
+          color: #555;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-size: 16px;
+          line-height: 1.4; }
+
+        /* via http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/ */
+        @viewport{
+            zoom: 1.0;
+            width: extend-to-zoom;
+        }
+        
+        @-ms-viewport{
+            width: extend-to-zoom;
+            zoom: 1.0;
+        }
+
+/* -- GENERAL TYPOGRAPHY -- */
+
+        a  { color: #0089ef; }
+
+        h1,h2,h3,h4,h5,h6 { color: #444; margin: 28px 0 20px 0; }
+
+        h1      { font-size: 40px; }
+        h2      { font-size: 32px; }
+        h3      { font-size: 24px; }
+        h4      { font-size: 21px; }
+        h5      { font-size: 18px; }
+        h6      { font-size: 18px; }
+
+        p         { margin: 20px 0 20px 0; }
+        
+        ul,ol     { margin: 0 0 20px 28px; padding: 0; }
+        dl        { margin: 0 0 20px 0; }
+        dl dt     { color: #444; margin-bottom: 4px; font-weight: bold; }
+        dl dd     { margin-bottom: 0px; margin-left: 24px; }
+        
+        pre,code  { font-size: 15px; line-height: 20px; font-family: 'Andale Mono', monospace; }
+        pre       { overflow: auto; margin: 0 0 20px 0; }
+        code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
+        
+        table     { border-collapse: collapse; table-layout:fixed; width:100%; margin: 0 0 20px 0; }
+        td,th     { padding: 8px 9px 7px; font-size: 14px; line-height: 17px; border: 1px solid #aaa; text-align: left; }
+        th        { background: #eee; }
+        td        { font-size: 13px; background: #fff; }
+
+/* -- LAYOUT -- */
+
+        .content { padding: 20px; background: #eee; }
+
+
+/* Fretboard Container/Wrapper */
+
+        .fretboard-wrapper {
+            display: inline-block;
+            position: relative;
+            width: 104px; /* 104, 156, 208, 312, 416 (actual), etc -- these all work perfectly. Others can distort heights over time */
+            margin: 4px;
+            background: #fff;
+        }
+        .v4 .fretboard-pillars {
+            padding-top: 115.38461538%; /* result of 30/26 aka 480/416, via http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
+        }
+        .v12 .fretboard-pillars {
+            padding-top: 269.230769230769%; /* result of 35/13 aka 1120/416, via http://ansciath.tumblr.com/post/7347495869/css-aspect-ratio */
+        }
+        .fretboard {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+/* Fretboard BG */
+        
+        /* Positioning */
+        .fretb {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /* Fretboard Element CSS */
+        .fretb .fretb_neckBG rect  { fill: #fff; }
+        .fretb .fretb_frets rect   { fill: #ddd; }
+        .fretb .fretb_top rect     { fill: #6e6e6e; }
+        .fretb .fretb_strings rect { fill: #6e6e6e; }
+
+/* Fretboard Content */
+        .cell {
+          width: 12.5%; 
+          height: 16.666666666666667%;
+          display: block;
+          float: left; 
+        }
+        .v12 .cell { height: 7.142857142%; }
+        .cell.dot .fretb_dot { fill: #27a9e1; }
+        .cell.empty          { /* no styles needed */ }

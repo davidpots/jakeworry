@@ -65,7 +65,7 @@
         .fretboard-wrapper {
             display: inline-block;
             position: relative;
-            width: 312px; /* 208, 312, 416 (actual), etc -- these all work perfectly. Others can distort heights over time */
+            width: 208px; /* 104, 156, 208, 312, 416 (actual), etc -- these all work perfectly. Others can distort heights over time */
             margin: 4px;
             background: #fff;
         }
@@ -100,6 +100,9 @@
         .fretb .fretb_strings rect { fill: #6e6e6e; }
 
 /* Fretboard Content */
+
+        .title { 
+            background:;}
         .cell {
           width: 12.5%; 
           height: 16.666666666666667%;
