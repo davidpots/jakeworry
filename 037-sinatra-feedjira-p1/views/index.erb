@@ -1,0 +1,5 @@
+<ul>
+  <% @feed_list.each do |feed| %>
+    <li><%= feed.title %> (<%= feed.entries.count %>)</li>
+  <% end %>
+</ul>
