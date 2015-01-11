@@ -9,7 +9,7 @@ song_year: 2006
 
 ## Chord progression cheat sheet
 
-For quick references to the _general_ tonal progressions used in this song, refer to this. For instructions & notes on exactly how to approach and play the chords on guitar, see further down this page. There are plenty of chord idiosyncrasies involving modified bass notes, atypical open strings, etc that I'm not worried about covering here.
+For quick references to the _general_ tonal progressions used in this song, refer to this. For instructions & notes on exactly how to approach and play the chords on guitar, see further down this page. There are plenty of chord idiosyncrasies involving modified bass notes, atypical open strings, etc that I'm not worried about covering just yet.
 
     VERSE     "I could tell you the wildest of tales..."
               | E      | F#m    | B      | E      |   
@@ -24,70 +24,10 @@ For quick references to the _general_ tonal progressions used in this song, refe
     BRIDGE    "Son, I am not everything..."
               | C#m    | B      | A      | E      |
               | F#m    | G#m    | A      | B      |
-    
 
-## Lyrics
+## Guitar chords and tablature
 
-Here are the lyrics, with the _generalized_ chords to match. For the exact chord positions, tabs, etc -- see the notes further down the page (there are various ways to approach the chord positions in this song).
-
-    VERSE
-                E            F#m
-        I could tell you the wildest of tales
-        B                        E
-        My friend the giant, and traveling sales
-        E                F#m
-        Tell you all the times that I failed
-            B                        E
-        The years all behind me, the stories exhaled.
-
-    CHORUS
-                E             F#m           B
-            And I'm... drying out... crying out...
-                 A           E (walk down)
-            This isn't how I go
-
-        I could tell you of a man not so tall
-        Who said life's a circus, and so we are small
-        Tell you of a girl that I saw
-        I froze in the moment, and she changed it all
-                
-                C#m           E             B 
-            And I'm... drying out... crying out...
-                 A           C#m
-            This isn't how I go
-                     E             B
-            ...Hurry now... lay me down...
-                A                B      C#m     A     E
-            And let these waters flow...
-                                 B      C#m     A     E
-                              ...flow...
-
-    BRIDGE
-                C#m           B              A                    E 
-                Son, I am not everything you thought that I would be
-                    F#m           G#m          A           B
-                But every story I have told is part of me-----
-                  
-                                               (intro chords x4, then walk down)
-
-        And you keep the air in my lungs
-        Floating along as a melody comes
-        And my heart beats like timpani drums
-        Keeping the time while a symphony strums
-
-            And I'm... drying out... crying out...
-            This isn't how I go
-            ...Hurry now... lay me down...
-            And let these waters flow...
-                              ...flow...
-                       ...let it flow...
-                       ...let it flow...
-
-                Son I am not everything you thought that I would be
-                But every story I have told is part of me
-                Son I leave you now but you have so much more to do
-                And every story I have told is part of you
-
+This song is a bit tricky! While you're doing the bulk of the work with 4-5 chords, I play each of the chords in different ways based on section of the song (roughly matching what you hear in the Yellowcard version). All of the following tabs are based on my own practice and interpretation of the various transcriptions I've found online -- each of which wasn't sufficient for my needs in some way. Hopefully this helps. Enjoy!
 
 ### Intro
 
@@ -202,3 +142,48 @@ Finally, the bridge. Similar chords from earlier in the song, though they're use
              F#m         C#m             A             B
          "But every story I have told is part of me........"
 
+## Lyrics
+
+Here are the lyrics for the song. Refer to the indentation to denote the various sections which repeat (verse, chorus, bridge). Chords and tabs for each section are found above.
+
+    VERSE
+        I could tell you the wildest of tales
+        My friend the giant, and traveling sales
+        Tell you all the times that I failed
+        The years all behind me, the stories exhaled.
+
+    CHORUS
+            And I'm... drying out... crying out...
+            This isn't how I go
+
+        I could tell you of a man not so tall
+        Who said life's a circus, and so we are small
+        Tell you of a girl that I saw
+        I froze in the moment, and she changed it all
+                
+            And I'm... drying out... crying out... 
+            This isn't how I go
+            ...Hurry now... lay me down...
+            And let these waters flow... flow...
+
+    BRIDGE
+                Son, I am not everything you thought that I would be
+                But every story I have told is part of me-----
+
+        And you keep the air in my lungs
+        Floating along as a melody comes
+        And my heart beats like timpani drums
+        Keeping the time while a symphony strums
+
+            And I'm... drying out... crying out...
+            This isn't how I go
+            ...Hurry now... lay me down...
+            And let these waters flow...
+                              ...flow...
+                       ...let it flow...
+                       ...let it flow...
+
+                Son I am not everything you thought that I would be
+                But every story I have told is part of me
+                Son I leave you now but you have so much more to do
+                And every story I have told is part of you
