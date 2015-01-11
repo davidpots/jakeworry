@@ -26,12 +26,9 @@ For quick references to the _general_ tonal progressions used in this song, refe
               | F#m    | G#m    | A      | B      |
     
 
-## Lyrics with general chords
+## Lyrics
 
-Here are the lyrics, with the generalized chords to match. For chord positions, tabs, etc -- see the notes further down the page (there are various ways to approach the chord positions in this song).
-
-    INTRO
-        E (for exact chords, see tabs below)
+Here are the lyrics, with the _generalized_ chords to match. For the exact chord positions, tabs, etc -- see the notes further down the page (there are various ways to approach the chord positions in this song).
 
     VERSE
                 E            F#m
@@ -44,7 +41,7 @@ Here are the lyrics, with the generalized chords to match. For chord positions, 
         The years all behind me, the stories exhaled.
 
     CHORUS
-                C#m           E             B
+                E             F#m           B
             And I'm... drying out... crying out...
                  A           E (walk down)
             This isn't how I go
@@ -53,11 +50,14 @@ Here are the lyrics, with the generalized chords to match. For chord positions, 
         Who said life's a circus, and so we are small
         Tell you of a girl that I saw
         I froze in the moment, and she changed it all
-
+                
+                C#m           E             B 
             And I'm... drying out... crying out...
+                 A           C#m
             This isn't how I go
+                     E             B
             ...Hurry now... lay me down...
-                                 B      C#m     A     E
+                A                B      C#m     A     E
             And let these waters flow...
                                  B      C#m     A     E
                               ...flow...
@@ -88,46 +88,40 @@ Here are the lyrics, with the generalized chords to match. For chord positions, 
                 Son I leave you now but you have so much more to do
                 And every story I have told is part of you
 
-## How to play the intro chords
 
-The four chords that make up the repeating part of the verse can be played a few ways. The band plays it something like this, which is a bit tricker if you're new to guitar.
+### Intro
 
-    e-|----0---------0----------0---------0------
-    B-|----0---------0----------0---------0------
-    G-|----9---------9----------8---------9------
-    D-|----x---------6----------9---------7------
-    A-|----9---------7----------7---------0------
-    E-|----0---------0---------------------------
-           E*        E          B         A
+Here's how I play the intro: each of these four chords is strummed for one measure before switching (listen to the song for the strumming pattern). For the E/F# chord, you could also play 09x900 if the chord shown below is problematic.
 
-Or, here's a slightly easier way I sometimes play it using more open positioning. This sounds _mostly_ like the version above -- definitely enough so to sell it. So many of the tonalities here are blended together (which is nice!) that it allows you to get away with a bit more than usual.
+    e-|----0---------0----------0---------0-------
+    B-|----0---------0----------0---------0-------
+    G-|----9---------9----------8---------9---8---
+    D-|---(9)--------6----------9---------7---7---
+    A-|----9---------7----------7---------0---0---
+    E-|----0---------0----------------------------
+          E/F#       E          B         A
 
-    e-|----0---------0----------0---------0------
-    B-|----0---------0----------0---------0------
-    G-|----2---------1----------8---------6------  ]     For the B and A chords,
-    D-|----4---------2----------9---------7------  ] <-- keep E-shape on these
-    A-|----0---------2----------9---------7------  ]     three strings.
-    E-|----0---------0---------------------------
-           E*        E          B         A          
+### Walk-down riff
 
-## How to play the walk down riff
-
-There are many ways to do this! Check out the choices below and use the one that works for you. Each of these is using the same notes; it's only your approach to playing the chord shapes that varies.
-
-### How Yellowcard probably plays it
-
-This is probably how the band plays it -- you have minimal movement down the fretboard, but you're required to have a strong and stretched out pinky. This is a good one to eventually practice if you're learning all of these. This is similar to how Dave Matthews plays the verse in #41, by the way.
+Here's a few ways to play the walk-down riff heard throughout this song. In this first version (which I usually prefer), I approach it as playing four distinct chords -- where each chord has an accented bass note (surrounded by * characters).
 
     E-|-------0--0--------0--0--------0--0-------0--0---
     A-|-------0--0--------0--0--------0--0-------0--0---
     D-|-------9--9--------9--9--------9--9-------9--9--- <-- Pinky stays here.
-    G-|----9-----------7-----------6---------(7)-------- <-- Index finger here.
-    B-|---------------------------------------9--------- <-- Ring finger here.
+    G-|---*9*---------*7*---------*6*--------(7)-------- 
+    B-|---(7)---------(9)---------(7)--------*9*-------- 
     E-|-------------------------------------------------
+    
+Likewise, sometimes I'll play it using an open position based on the E-major scale:
 
-### Single finger walk-down (easy)
+    e-|---0---|------0-0------0-0-----0-0------0-0---
+    B-|---0---|---0--0-0------0-0-----0-0------0-0---
+    G-|---1---|------------2-------1-------(2)-------
+    D-|---2---|-----------------------------4--------
+    A-|---2---|--------------------------------------
+    E-|---0---|--------------------------------------
 
-This approach is easy as pie, and a great exercise in muting: just put your ring finger on the 4th string. Mute the 3rd string with that same ring finger (by draping the finger over the 3rd string so it touches, but doesn't press down). Let the top two strings ring openly. There you have it!
+And an easier solution, if you're interested, is to play it like this:
 
     e-|-------0-0------0-0------0-0------0-0---
     B-|-------0-0------0-0------0-0------0-0---
@@ -136,13 +130,75 @@ This approach is easy as pie, and a great exercise in muting: just put your ring
     A-|----------------------------------------
     E-|----------------------------------------
 
-### Open-position version
+### Verse
 
-The idea behind this approach is you're down in the open position of the E-major chord -- and thus, are playing the bass notes as heard in the chord. For the 2nd step of the walkdown, add your pinky finger on the third string (which is how you'd also play an Esus4). For the 4th step of the walkdown, you're sliding your index and ring fingers up to the 2nd and 4th frets, respctively -- and note, these are the strings they're already on if you're in the E-major position!
+Four chords, played for one measure. Repeat as needed. Note, the accented bass note for each chord is surrounded by stars in the tab below (*). Feel free to emphasize, accent, or otherwise lead each measure with this bass note as desired -- if you listen to the Yellowcard version of this song, you'll hear this note ringing through.
 
-    e-|---0---|------0-0------0-0-----0-0------0-0---
-    B-|---0---|---0--0-0------0-0-----0-0------0-0---
-    G-|---1---|------------2-------1-------(2)-------
-    D-|---2---|-----------------------------4--------
-    A-|---2---|--------------------------------------
-    E-|---0---|--------------------------------------
+    e-|-----0-----------0-------------------0------------0-----
+    B-|-----0-----------0-------------------0------------0-----
+    G-|-----9-----------9-------------------9------------9-----
+    D-|----*9*---------*7*------------------7------------6-----   (repeat)
+    A-|-----7-----------9------------------*6*----------*7*----
+    E-|--------------------------------------------------------
+            E          F#m                  B            E
+        "...Tell you... wildest of tales... my friend... travelling sales..."
+
+### Chorus, part 1
+
+For the first verse, start on E. On the "go" begin the walkdown riff.
+
+    e-|-----0-------------0-------------0-----------0----
+    B-|-----0-------------0-------------0-----------0----
+    G-|-----1-------------2-------------8-----------2----
+    D-|-----2-------------4-------------9-----------2----
+    A-|-----2-------------4-------------9-----------0----
+    E-|-----0------------(0)-----------(0)---------------
+            E            F#m            B           A
+        "...I'm... drying out... crying out... this isn't how I go..."
+
+For all other verses, start on C#m. Repeat these four chords as needed for the "Hurry now, lay me down" line.
+
+    e-|-----0-------------0-------------0-----------0----
+    B-|-----5-------------0-------------0-----------0----
+    G-|-----6-------------1-------------8-----------2----
+    D-|-----6-------------2-------------9-----------2----
+    A-|-----4-------------2-------------9-----------0----
+    E-|-------------------0------------(0)---------------
+           C#m            E             B           A
+        "...I'm... drying out... crying out... this isn't how I go..."
+
+### Chorus, part 2
+
+For "Let these waters flow..." part of the chorus, play these chords. One measure each. Repeat as necessary.
+
+    e-|--------------------0---------0--------0----------0----
+    B-|--------------------0---------5--------0----------0----
+    G-|--------------------8---------6--------2----------1----
+    D-|--------------------9---------6--------2----------2----
+    A-|--------------------9---------4--------0----------2----
+    E-|--------------------7-----------------------------0----
+                           B        C#m       A          E
+         "Let these waters flow..."
+
+### Bridge
+
+Finally, the bridge. Similar chords from earlier in the song, though they're used in a different order.
+
+    e-|---0-------------0--------------0--------------------0------|-
+    B-|---5-------------0--------------0--------------------0------|-
+    G-|---6-------------4--------------2--------------------1------|-
+    D-|---6-------------4--------------2--------------------2------|-
+    A-|---4-------------2--------------0--------------------2------|-
+    E-|-----------------------------------------------------0------|-
+         C#m            B              A                    E
+         "Son, I am not everything you thought that I would be...
+
+     -|-------0-----------0--------------0-------------0----
+     -|-------0-----------5--------------0-------------0----
+     -|-------2-----------6--------------2-------------4----
+     -|-------4-----------6--------------2-------------4----
+     -|-------4-----------4--------------0-------------2----
+     -|------(0)--------------------------------------------
+             F#m         C#m             A             B
+         "But every story I have told is part of me........"
+
