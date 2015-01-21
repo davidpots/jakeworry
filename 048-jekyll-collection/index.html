@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<ul style="margin-left: 0; position: relative;">
+{% for podcast in site.podcasts %}
+  <li style="list-style: none; padding-left: 96px; margin: 0 0 2rem 0;">
+    <img style="position: absolute; left: 0; width: 80px;" width="80" src="{{ podcast.url-thumbnail }}" />
+    <h2 style="margin: 0; font-weight: bold;">{{ podcast.title }}</h2>
+    <p style="margin: 0;">{{ podcast.description }}</p>
+    <p><a href="{{ podcast.url-itunes }}">iTunes</a> | <a href="{{ podcast.url-rss }}">RSS</a> | <a href="{{ podcast.url-web }}">Website</a></p>        
+  </li>
+{% endfor %}
+</ul>

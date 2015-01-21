@@ -23,7 +23,7 @@ For quick references to the _general_ tonal progressions used in this song, refe
 
     BRIDGE    "Son, I am not everything..."
               | C#m    | B      | A      | E      |
-              | F#m    | G#m    | A      | B      |
+              | F#m    | C#m    | A      | B      |
 
 ## Guitar chords and tablature
 
@@ -144,46 +144,81 @@ Finally, the bridge. Similar chords from earlier in the song, though they're use
 
 ## Lyrics
 
-Here are the lyrics for the song. Refer to the indentation to denote the various sections which repeat (verse, chorus, bridge). Chords and tabs for each section are found above.
+Here are the lyrics for the song. Refer to the indentation to denote the various sections which repeat (verse, chorus, bridge). I've included the basic chords along with these lyrics -- and am not worried about specifying the exact technically correct names (for chords like Bsus4add9, or similar -- here, I just call that "B" -- modify each chord as you wish).
 
     VERSE
+                E            F#m
         I could tell you the wildest of tales
+        B                        E
         My friend the giant, and traveling sales
+        E                F#m
         Tell you all the times that I failed
-        The years all behind me, the stories exhaled.
+            B                        E
+        The years all behind me, the stories exhaled
 
     CHORUS
+                E             F#m           B
             And I'm... drying out... crying out...
+                 A           E (walk-down riff)
             This isn't how I go
 
+                E             F#m
         I could tell you of a man not so tall
+            B                         E
         Who said life's a circus, and so we are small
+        E             F#m
         Tell you of a girl that I saw
+          B                        E
         I froze in the moment, and she changed it all
                 
+                C#m           E             B
             And I'm... drying out... crying out... 
+                 A           C#m
             This isn't how I go
+                     E             B
             ...Hurry now... lay me down...
-            And let these waters flow... flow...
+                A                B     C#m   A   E   
+            And let these waters flow...............
+                                 B     C#m   A   E   
+                              ...flow...............
 
     BRIDGE
+                C#m           B              A                    E
                 Son, I am not everything you thought that I would be
-                But every story I have told is part of me-----
+                    F#m        C#m             A            B
+                But every story I have told is part of me--------
 
+                E        F#m
         And you keep the air in my lungs
+        B                   E
         Floating along as a melody comes
+               E                F#m
         And my heart beats like timpani drums
+        B                        E
         Keeping the time while a symphony strums
 
+                C#m           E             B
             And I'm... drying out... crying out...
+                 A           C#m
             This isn't how I go
+                     E             B
             ...Hurry now... lay me down...
-            And let these waters flow...
-                              ...flow...
-                       ...let it flow...
-                       ...let it flow...
+                A                B     C#m   A   E   
+            And let these waters flow................
+                                 B     C#m   A   E   
+                              ...flow................
+                                 B     C#m   A   E   
+                       ...let it flow................
+                                 B     C#m   A   E       (E   F#m   G#m   A   B)
+                       ...let it flow................
 
-                Son I am not everything you thought that I would be
-                But every story I have told is part of me
-                Son I leave you now but you have so much more to do
-                And every story I have told is part of you
+                C#m           B              A                    E
+                Son, I am not everything you thought that I would be
+                    F#m         C#m            A              B
+                But every story I have told is part of me---------
+                C#m              B                A               E
+                Son, I leave you now but you have so much more to do
+                    F#m         C#m            A              B
+                And every story I have told is part of you---------
+                
+                                                    (walk-down riff, end on E)
