@@ -1,0 +1,8 @@
+<ul>
+  <% @feed.entries.each do |entry| %>
+    <li>
+      <h3><%= entry.title %></h3>
+      <p><%= entry.summary %><br /><strong><a href="/entry?url_id=<%= @i %>&entry_id=<%= CGI::escape(entry.entry_id) %>">ADD</a></strong></p>
+    </li>
+  <% end %>
+</ul>

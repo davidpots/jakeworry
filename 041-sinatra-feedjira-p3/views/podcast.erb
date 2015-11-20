@@ -1,0 +1,7 @@
+<ul>
+  <% @feeds.entries.each_with_index do |entry,index| %>
+    <li>
+      <h4><a href="/feed?feed_url=<%= index %>"><%= entry.title %></a></h4>
+    </li>
+  <% end %>
+</ul>
