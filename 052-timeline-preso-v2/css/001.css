@@ -1,0 +1,195 @@
+/* -- SETUP -- */
+
+        * {
+        	margin: 0;
+        	padding: 0;
+        	position: relative;
+        	-webkit-box-sizing: border-box;
+        	   -moz-box-sizing: border-box;
+        	        box-sizing: border-box;
+        }
+
+        html { height: 100%; }
+
+        body {
+          color: #555;
+          background: #eee;
+          font-family: Avenir, 'Open Sans', sans-serif;
+          height: 100%;
+          font-size: 16px;
+          line-height: 24px; }
+
+/* -- */
+
+.controls {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.controls li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.button {
+  display: block;
+  background: #AC81FF;
+  text-decoration: none;
+  padding: 5px 12px 4px;
+  color: white;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  margin-left: 4px;
+}
+
+.button:hover {
+  box-shadow: inset 0px 0px 30px rgba(0,0,0,0.2);
+}
+
+.button-reset { display: none; }
+
+.today-line {
+  border-left: 1px solid #ccc;
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: 100px;
+  height: 100%;
+}
+
+.line-label {
+  position: absolute;
+  bottom: 40px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 5px 8px;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 16px;
+  border: 1px solid #ccc;
+}
+
+
+.approval-line {
+  border-left: 1px dashed #bbb;
+  position: absolute;
+  width: 1px;
+  top: 0;
+  bottom: 0;
+  left: 250px;
+  height: 100%;
+}
+
+.timeline-hash {
+  display: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 26000px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-hash li {
+  height: 12px;
+  width: 2px;
+  background: #777;
+  margin-top: 7px;
+  margin-right: 60px;
+  list-style: none;
+  display: inline-block;
+}
+
+.timeline-labels {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 26000px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 62.5px;
+}
+
+.timeline-labels li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #999;
+  font-size: 14px;
+  margin-right: 400px;
+
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  top: -27px; /* I think this is the arbitrary "24" amount plus half of the timeline height (which is 6)... 24 + (6/2) = 27 */
+  position: relative;
+}
+
+.timeline {
+  background: #979797;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 26000px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline li {
+  list-style: none;
+  display: inline-block;
+  width: 20px;
+  margin: 0 20px;
+  padding: 0;
+  top: -27px; /* I think this is the arbitrary "24" amount plus half of the timeline height (which is 6)... 24 + (6/2) = 27 */
+  position: relative;
+}
+
+.timeline li:first-child,
+.timeline-labels {
+  margin-left: 125px;
+}
+
+.timeline li span {
+  background: white;
+  color: white;
+  height: 24px;
+  width:  24px;
+  border: 6px solid #017AFF;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  border-color: transparent;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+
+.timeline li.active span {
+  /*border-color: red;*/
+  transition: background 0.25s ease;
+  background-color: #017AFF;
+}
+
+.timeline li.preactive span {
+  display: block;
+  border-color: #017AFF;
+  transition: border-color 0.25s ease;
+}
+
+
+
+.timeline li.show-on-load span {
+  /*display: block;*/
+}
