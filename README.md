@@ -2,7 +2,7 @@
 
 This is a repository of front-end development tidbits and explorations. Each project is given a directory and focuses on a single technique. One chief goal with this is to leave myself a trail of helpful breadcrumbs so I can reference past lessons learned and tricks figured out. This is named "Jake Worry" as a clever way to disguise my interest in jQuery -- though quickly the topic of these explorations jumped to native Javascript, as well as Rails / CSS / etc.
 
-Here are a few "finished" projects I created after sharpening my skillset on these exercises:
+Here are a few "finished" projects I created after sharpening my skillset on  these exercises: 
 
 - <a href="http://davidpots.com/gifparade">GIF Parade</a> (combine multiple GIFs + Youtube music) from September 19, 2013
 - <a href="http://davidpots.com/jakeworry/019-JSON-Songnotes-Mobile/019.html">Songnotes mobile</a> (mobile-friendly catalog listing via JSON) from September 13, 2013
