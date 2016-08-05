@@ -16,7 +16,7 @@ For quick references to the _general_ tonal progressions used in this song, refe
 
     CHORUS    "And I'm... drying out..."
               | C#m    | E      | B      | A      |
-              
+
               "Flow..."
               | B      | C#m    | A      | E      |
 
@@ -33,25 +33,38 @@ This song is a bit tricky! While you're doing the bulk of the work with 4-5 chor
 
 Here's how I play the intro: each of these four chords is strummed for one measure before switching (listen to the song for the strumming pattern). For the E/F# chord, you could also play 09x900 if the chord shown below is problematic.
 
-    e-|----0---------0----------0---------0-------
-    B-|----0---------0----------0---------0-------
-    G-|----9---------9----------8---------9---8---
-    D-|---(9)--------6----------9---------7---7---
-    A-|----9---------7----------7---------0---0---
-    E-|----0---------0----------------------------
-          E/F#       E          B         A
+    e-|––––0––––––––0––––––––0––––––––0––––––––
+    B-|––––0––––––––0––––––––0––––––––0––––––––
+    G-|––––9––––––––9––––––––8––––––––9––––8–––
+    D-|––––9––––––––6––––––––9––––––––7––––7–––
+    A-|––––9––––––––7––––––––7––––––––0––––0–––    ...play twice
+    E-|––––0––––––––0––––––––––––––––––––––––––
+          Esus2      E        Emaj7       A
 
 ### Walk-down riff
 
 Here's a few ways to play the walk-down riff heard throughout this song. In this first version (which I usually prefer), I approach it as playing four distinct chords -- where each chord has an accented bass note (surrounded by * characters).
 
-    E-|-------0--0--------0--0--------0--0-------0--0---
-    A-|-------0--0--------0--0--------0--0-------0--0---
-    D-|-------9--9--------9--9--------9--9-------9--9--- <-- Pinky stays here.
-    G-|---*9*---------*7*---------*6*--------(7)-------- 
-    B-|---(7)---------(9)---------(7)--------*9*-------- 
-    E-|-------------------------------------------------
-    
+    E ||———————0——————————0——————————0—————————0—————
+    A ||———————0——————————0——————————0—————————0—————
+    D ||———————9——————————9——————————9—————————9————— <—— Pinky stays here
+    G ||————9——————————7——————————6————————————7—————
+    B ||————————————————————————————————————9————————
+    E ||—————————————————————————————————————————————
+
+To practice this, learn these chord positions (in this order). Then, use the tab immediately above for guidance on which bass note to play.
+
+    E-|-------0----------0----------0---------0-----
+    A-|-------0----------0----------0---------0-----
+    D-|-------9----------9----------9---------9----- <-- Pinky stays here.
+    G-|-------9----------7----------6---------7-----
+    B-|-------7----------9----------7---------9-----
+    E-|---------------------------------------------
+
+
+#### Other ways to play the walkdown riff
+
+
 Likewise, sometimes I'll play it using an open position based on the E-major scale:
 
     e-|---0---|------0-0------0-0-----0-0------0-0---
@@ -72,16 +85,15 @@ And an easier solution, if you're interested, is to play it like this:
 
 ### Verse
 
-Four chords, played for one measure. Repeat as needed. Note, the accented bass note for each chord is surrounded by stars in the tab below (*). Feel free to emphasize, accent, or otherwise lead each measure with this bass note as desired -- if you listen to the Yellowcard version of this song, you'll hear this note ringing through.
+Four chords, played for one measure. Repeat as needed. Feel free to emphasize, accent, or otherwise lead each measure with this bass note as desired -- if you listen to the Yellowcard version of this song, you'll hear this note ringing through.
 
     e-|-----0-----------0-------------------0------------0-----
     B-|-----0-----------0-------------------0------------0-----
     G-|-----9-----------9-------------------9------------9-----
-    D-|----*9*---------*7*------------------7------------6-----   (repeat)
-    A-|-----7-----------9------------------*6*----------*7*----
+    D-|--9--9--------7--7-------------------7------------6-----   (repeat)
+    A-|-----7-----------9----------------6--6---------7--7-----
     E-|--------------------------------------------------------
-            E          F#m                  B            E
-        "...Tell you... wildest of tales... my friend... travelling sales..."
+            E          
 
 ### Chorus, part 1
 
@@ -170,9 +182,9 @@ Here are the lyrics for the song. Refer to the indentation to denote the various
         Tell you of a girl that I saw
           B                        E
         I froze in the moment, and she changed it all
-                
+
                 C#m           E             B
-            And I'm... drying out... crying out... 
+            And I'm... drying out... crying out...
                  A           C#m
             This isn't how I go
                      E             B
@@ -220,5 +232,5 @@ Here are the lyrics for the song. Refer to the indentation to denote the various
                 Son, I leave you now but you have so much more to do
                     F#m         C#m            A              B
                 And every story I have told is part of you---------
-                
+
                                                     (walk-down riff, end on E)

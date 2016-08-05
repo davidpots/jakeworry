@@ -1,0 +1,33 @@
+/* -- SETUP -- */
+
+        * {
+        	margin: 0;
+        	padding: 0;
+        	position: relative;
+        	-webkit-box-sizing: border-box;
+        	   -moz-box-sizing: border-box;
+        	        box-sizing: border-box;
+        }
+
+        html { height: 100%; }
+
+        body {
+          color: #555;
+          background: #eee;
+          font-family: Avenir, 'Open Sans', sans-serif;
+          height: 100%;
+          font-size: 16px;
+          line-height: 24px; }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+img { max-width: 100%; }
+
+ul.lemming li,
+ul.rhino li { list-style: none; display: none; }
+
+ul.lemming li.active,
+ul.rhino li.active { display: block; }
